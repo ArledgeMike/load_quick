@@ -1,0 +1,100 @@
+body, html{
+//  overflow-x:hidden !important;
+//  overflow-y:scroll !important;
+}
+#container{
+  width:100%;
+  height:100%;
+  display:block;
+//  overflow-y:scroll;
+}
+#container .section{
+  position:relative;
+  height:100%;
+  display:block;
+}
+#container .headline{
+  background: url(../images/2.0_headline.svg) no-repeat;	
+  width:719px;
+  height:45px;
+  position:absolute;
+  left:94px;
+  top:90px;
+}
+#container .sub_headline{
+  position:absolute;
+  top:145px;
+  left:94px;
+  width:584px;
+  font-size: 18px;
+  line-height: 25px
+}
+#container .section .graph{
+  width:837px;
+  height:328px;
+  background: url(../images/2.0_graph.svg) no-repeat;
+  position:absolute;
+  left:158px;
+  top:236px;
+}
+#container p.graph_footer{
+  position:absolute;
+  left:90px;
+  top:575px;
+  width:700px;
+  font-size:13px;
+}
+#container #efficacy_two .graph{
+  background: url(../images/2.1_graph.svg) no-repeat !important;
+  width:716px;
+  height:357px;
+}
+#container #efficacy_two p.graph_footer{
+  top:600px;
+}
+
+#container #efficacy_three .graph{
+  background: url(../images/2.2_graph.svg) no-repeat;
+  width:800px;
+  height:353px;
+  left:119px;
+}
+#container #efficacy_three p.body{
+  position:absolute;
+  top:600px;
+  left:90px;
+  width:75%;
+}
+#container #efficacy_three p.graph_footer{
+  top:646px;
+}
+
+#container #efficacy_four .headline{
+  background:url(../images/2.3_headline.svg) no-repeat;
+}
+#container #efficacy_four .graph{
+  background:url(../images/2.3_graph.svg) no-repeat;
+}
+#container #efficacy_four p.graph_footer{
+  left:90px;
+  top:590px;
+}
+
+#container #efficacy_five .graph{
+  background: url(../images/2.4_graph.svg)no-repeat;
+}
+#container #efficacy_six{
+  background: url(../images/2.5_background.jpg)no-repeat;
+  background-size:contain;
+}
+#container #efficacy_six .graph{
+  background: url(../images/2.5_graph.svg)no-repeat;
+  height:370px;
+  left:107px;
+  top:224px;
+}
+#container #efficacy_six p.graph_footer{
+top:600px;
+}
+
+
