@@ -1,9 +1,6 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="64px" height="64px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
-<style type="text/css">
+	 width="64px" height="64px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve"><style type="text/css">
 	.st0{fill:#F04E46;}
 	.st1{fill:none;stroke:#FFFFFF;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;}
-</style>
-<circle class="st0" cx="32" cy="32" r="31.71"/>
-<polyline class="st1" points="23.336,53.339 44.664,32 23.336,10.661 "/>
-</svg>
+</style><circle class="st0" cx="32" cy="32" r="31.71"/><polyline class="st1" points="23.336,53.339 44.664,32 23.336,10.661 "/></svg>
+

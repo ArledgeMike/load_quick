@@ -1,13 +1,5 @@
 /*TEMPLATE TYPE GLOBAL ELEMENTS */
-
-h1{
- font-family: Arial; 
- font-weight: bold;
- font-size:48px;
- line-height:50px;
- color: #60a296;
-} 
-h3{
+h2{
   font-family: Arial;
   font-weight:bold;
   font-size:20px;
@@ -29,14 +21,13 @@ p.footnote{
 
 /* TEMPLATE GLOBAL ELEMENTS */
 *{
-	padding:0px;
-	margin:0px;
+  padding:0px;
+  margin:0px;
 }
 body, html{
   overflow:hidden;
   width:100%;
   height:100%;
-  
 }
 body{
   font-family:sans-serif;	
@@ -79,8 +70,10 @@ nav ul li a{
 #link_controls{
   width:125px;
   position:fixed;
-  top: 30%;
+  top: 325px;
   left:0px;
+  z-index:9999;
+  display:none;
 }
 #link_controls ul{
   width:100%;
@@ -129,7 +122,6 @@ nav ul li a{
   text-indent: 130px;
 }
 #isi #body{
-  /* padding-top:10px; */
   overflow-y:scroll;
   float: left;
   padding: 21px 25px 200px 25px;
@@ -143,19 +135,19 @@ nav ul li a{
   margin-bottom:20px;
 }
 #isi #body #black_box h3{
-	margin-bottom:15px;
+  margin-bottom:15px;
 }
 #isi #body #black_box p{
-	margin-bottom:8px;
+  margin-bottom:8px;
 }
 #isi #body section{
-	margin-bottom:18px
+  margin-bottom:18px
 }
 #isi #body section p{
-	margin-bottom: 8px
+  margin-bottom: 8px
 }
 #isi #body section ul{
-	padding-left:18px
+  padding-left:18px
 }
 footer{
   width:100%;
@@ -167,7 +159,7 @@ footer{
   z-index:9;
 }
 footer ul{
- x width: 45%;
+  width: 45%;
   height: 100%;
   float:left;
   padding-top: 10px;
@@ -177,7 +169,6 @@ footer ul.right_menu{
   float:right;
   text-align: right;
   padding-right: 29px;
-  /* padding-top: 15px; */
 }
 footer ul li{
   display: inline-block;
@@ -273,7 +264,6 @@ footer ul li a.icon:before{
   text-indent:999px;
   overflow:hidden;
 }
-
 
 /*Animations*/
 .start_isi{
