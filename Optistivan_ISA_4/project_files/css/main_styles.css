@@ -1,0 +1,62 @@
+#container{
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+#container .section .headline{
+  background: url(../images/4.0_headline.svg) no-repeat;	
+  width:745px;
+  height:105px;
+  position:absolute;
+  left:94px;
+  top:90px;
+}
+
+#container .section .sub_headline{
+  position:absolute;
+  top:200px;
+  left:94px;
+  width:584px;
+  font-size: 18px;
+  line-height: 14px;}
+#container .section .graph{
+  width: 903px;
+  height: 460px;
+  background: url(../images/4.0_graph.svg) no-repeat;
+  position:absolute;
+  left:94px;
+  top: 250px;
+}
+#container p.graph_footer{
+  position:absolute;
+  left:90px;
+  top: 737px;
+  width:700px;
+  font-size:13px;
+}
+
+#container .section{
+  background:url(../images/4.0_background.jpg) no-repeat;
+  width: 100%;
+  background-size: contain;
+  height: 100% !important;
+}
+
+#container .section#safety .graph{
+background:url(../images/4.1_graph.svg) no-repeat;
+width:900px;
+height:340px;
+}
+#container .section#nsclc_safety .graph{
+background:url(../images/4.2_graph.svg) no-repeat;
+width:900px;
+height:487px;
+}
+#container .section#nsclc_safety_two .graph{
+background:url(../images/4.3_graph.svg) no-repeat;
+width:900px;
+height:487px;
+}
+
+

@@ -1,0 +1,43 @@
+#container{
+  width:100%;
+  height:100%;
+  display:block;
+}
+#container .section{
+	background:url(../images/10.0_background.jpg) no-repeat;
+	width:100%;
+	height:100%;
+	background-size: contain;
+}
+#container .section .headline{
+  background: url(../images/10.0_headline.svg) no-repeat;	
+  width:763px;
+  height:105px;
+  position:absolute;
+ 
+  left:94px;
+  top:90px;
+}
+#container .section .sub_headline{
+  position:absolute;
+  top:200px;
+  left:94px;
+  width:584px;
+  font-size: 18px;
+  line-height: 21px;}
+#container .section .graph{
+}
+
+#container p.fair_use{
+    position: absolute;
+    top: 146px;
+    left: 94px;
+    width: 680px;
+}
+#container p.graph_footer{
+  position:absolute;
+  left:90px;
+  top: 618px;
+  width:700px;
+  font-size:13px;
+}
