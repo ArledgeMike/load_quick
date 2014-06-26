@@ -1,15 +1,19 @@
 var isa = {
   
+  
   init: function(){
   
     console.log("isa called");
-  
   },
   
   configure_click: function(event){
   
   },
-
+  show_controls_efficacy: function(show){
+    if(show){
+      $('#link_controls').fadeIn();
+    }
+  },
   lock_scroll: function(){
     $(document).on('touchmove', false);
   },

@@ -1,17 +1,15 @@
 var isa = {
   
-  show_controls: false,
   
   init: function(){
   
     console.log("isa called");
-  
   },
   
   configure_click: function(event){
   
   },
-  show_endpoints: function(show){
+  show_controls_efficacy: function(show){
     if(show){
       $('#link_controls').fadeIn();
     }
