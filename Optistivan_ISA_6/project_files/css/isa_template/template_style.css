@@ -1,13 +1,5 @@
 /*TEMPLATE TYPE GLOBAL ELEMENTS */
-
-h1{
- font-family: Arial; 
- font-weight: bold;
- font-size:48px;
- line-height:50px;
- color: #60a296;
-} 
-h3{
+h2{
   font-family: Arial;
   font-weight:bold;
   font-size:20px;
@@ -29,14 +21,13 @@ p.footnote{
 
 /* TEMPLATE GLOBAL ELEMENTS */
 *{
-	padding:0px;
-	margin:0px;
+  padding:0px;
+  margin:0px;
 }
 body, html{
   overflow:hidden;
   width:100%;
   height:100%;
-  
 }
 body{
   font-family:sans-serif;	
@@ -79,8 +70,10 @@ nav ul li a{
 #link_controls{
   width:125px;
   position:fixed;
-  top: 30%;
+  top: 325px;
   left:0px;
+  z-index:9999;
+  display:none;
 }
 #link_controls ul{
   width:100%;
@@ -106,12 +99,14 @@ nav ul li a{
 }
 #isi{
   width:100%;
-  height: 100%;
+  /* height: 100%; */
   position:fixed;
   bottom: 0px;
   top: 100%;
   left:0px;
-  z-index:8;
+  z-index:999;
+  padding-bottom: 320px;
+  
 }
 #isi #header{
   width:706px;
@@ -124,18 +119,31 @@ nav ul li a{
   position:relative;
   cursor:pointer;  
 }
+#isi #header:before{
+  content:"slug";
+  width:50px;
+  height: 39px;
+  background: url(../../images/isa_template/isi_swoop.png) no-repeat;
+  overflow:hidden;
+  text-indent:999px;
+  display: inline-block;
+  position: absolute;
+  left: -31px;
+  top: 1px;
+}
 #isi #header p{
   line-height: 41px;	
   text-indent: 130px;
 }
 #isi #body{
-  /* padding-top:10px; */
   overflow-y:scroll;
   float: left;
-  padding: 21px 25px 200px 25px;
+  padding: 21px 25px 800px 25px;
   border-top: thin solid #f3f1e9;
   height: 150%;
   background: white;
+  /* margin-bottom: 200px; */
+  
 }
 #isi #body #black_box{
   border:thin black solid;
@@ -143,19 +151,19 @@ nav ul li a{
   margin-bottom:20px;
 }
 #isi #body #black_box h3{
-	margin-bottom:15px;
+  margin-bottom:15px;
 }
 #isi #body #black_box p{
-	margin-bottom:8px;
+  margin-bottom:8px;
 }
 #isi #body section{
-	margin-bottom:18px
+  margin-bottom:18px
 }
 #isi #body section p{
-	margin-bottom: 8px
+  margin-bottom: 8px
 }
 #isi #body section ul{
-	padding-left:18px
+  padding-left:18px
 }
 footer{
   width:100%;
@@ -164,38 +172,41 @@ footer{
   bottom:0px;
   left:0px;
   background: #f3f1e9;
-  z-index:9;
+  z-index:9999;
 }
 footer ul{
- x width: 45%;
+  width: 391px;
   height: 100%;
   float:left;
-  padding-top: 10px;
-  padding-left: 30px;
+  padding-top: 12px;
+  padding-left: 50px;
 }
 footer ul.right_menu{
   float:right;
   text-align: right;
-  padding-right: 29px;
-  /* padding-top: 15px; */
+  /* padding-right: 32px; */
+  position: relative;
+  /* left: -565px; */
+  width: 427px;
 }
 footer ul li{
   display: inline-block;
 }
 footer ul li.first_item{
   margin-right: 24px;
-  margin-left:20px;
+  /* margin-left:20px; */
 }
 footer ul li a{
   font-weight:bold;
   text-decoration:none;
   color: #6d6e70;
   position:relative;
-  top: 7px;
+  top: 0px;
+  line-height:29px;
 }
 footer ul li a.icon:before{
   position:relative;
-  top: -7px;
+  top: 0px;
 }
 
 /*ICON BUTTONS */
@@ -250,6 +261,7 @@ footer ul li a.icon:before{
   background: url(../../images/isa_template/icon_opt_in.svg) no-repeat;
   text-indent:999px;
   overflow:hidden;
+  top: -0px;
 }
 #references.icon:before{
   content:"/slug";
@@ -259,7 +271,7 @@ footer ul li a.icon:before{
   width: 35px;
   height: 35px;
   position: relative;
-  top: -2px;
+  top: 2px;
 }
 #medication_guide.icon:before{
   content:"/slug";
@@ -272,8 +284,29 @@ footer ul li a.icon:before{
   background: url(../../images/isa_template/icon_prescribing_info.svg) no-repeat;
   text-indent:999px;
   overflow:hidden;
+  /* left: -81px; */
 }
-
+/*MODALS */
+.modal_bg{
+  width:100%;
+  height:100%;
+  background: rgba(0,0,0,.4);
+  position:fixed;
+  top:0px;
+  left:0px;
+  display:none;
+  z-index:99999;
+}
+.modal_win{
+	width:540px;
+	height:350px;
+	background:white;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-top:-200px;
+	margin-left:-270px;
+}
 
 /*Animations*/
 .start_isi{
@@ -286,4 +319,7 @@ footer ul li a.icon:before{
 .start_anim{
 	margin-top:-695px;
 }
+
+
+
 

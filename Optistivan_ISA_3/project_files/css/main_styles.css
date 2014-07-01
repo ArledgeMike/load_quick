@@ -1,10 +1,10 @@
-#container{
+#content{
   width:100%;
   height:100%;
   display:block;
 }
 
-#container .headline{
+#content .headline{
   background: url(../images/3.0_headline.svg) no-repeat;	
   width:719px;
   height:50px;
@@ -13,7 +13,7 @@
   top:90px;
 }
 
-#container .sub_headline{
+#content .sub_headline{
   position:absolute;
   top:145px;
   left:94px;
@@ -21,7 +21,7 @@
   font-size: 18px;
   line-height: 25px
 }
-#container .section .graph{
+#content .section .graph{
   width:837px;
   height:328px;
   background: url(../images/2.0_graph.svg) green no-repeat;
@@ -29,7 +29,7 @@
   left:158px;
   top:236px;
 }
-#container p.graph_footer{
+#content p.graph_footer{
   position:absolute;
   left:90px;
   top:575px;

@@ -1,15 +1,11 @@
-#container{
+#content{
+  background:url(../images/8.0_background.jpg) no-repeat;
+  background-size: contain;
   width:100%;
   height:100%;
   display:block;
 }
-#container .section{
-	background:url(../images/8.0_background.jpg) no-repeat;
-	width:100%;
-	height:100%;
-	background-size: contain;
-}
-#container .section .headline{
+#content .headline{
   background: url(../images/8.0_headline.svg) no-repeat;	
   width:745px;
   height:105px;
@@ -18,29 +14,149 @@
   left:94px;
   top:90px;
 }
-#container .section .sub_headline{
+#content .sub_headline{
   position:absolute;
   top:200px;
   left:94px;
   width:584px;
   font-size: 18px;
   line-height: 21px;}
-#container .section .graph{
-  width: 516px;
-  height: 395px;
-  background: url(../images/8.0_graph.svg) no-repeat;
+#content .graph{
+  width: 520px;
   position:absolute;
-  left:202px;
-  top: 185px;
+  left:  145px;
+  top: 165px;
+}
+#content #acc.graph{
+
+}
+#content #acc.graph .acc_btn{
+width: 520px;
+height: 50px;
+background: url(../images/8.0_background_title.svg) no-repeat;
+position:relative;
+cursor:pointer;
+overflow: hidden;
+text-indent: 999px;
+margin-bottom: 15px;
+background-position-y: -50px;
+}
+#content #acc.graph .acc_btn.open{
+//height:150px;
+//background-position-y: 0px;
 }
 
-#container p.fair_use{
+#content #acc.graph .acc_btn span{
+/* width:100%; */
+height: 50px;
+display:block;
+background-position-x: 40px !important;
+}
+
+#content #acc.graph #survival.acc_btn span{
+background: url(../images/8.0_survival_title.svg) no-repeat;
+}
+#content #acc.graph #moa.acc_btn span{
+background: url(../images/8.0_moa_title.svg) no-repeat;
+}
+#content #acc.graph #safety.acc_btn span{
+background: url(../images/8.0_safety_title.svg) no-repeat;
+}
+#content #acc.graph #patient.acc_btn span{
+background: url(../images/8.0_patient_title.svg) no-repeat;
+}
+#content #acc.graph #dosing.acc_btn span{
+background: url(../images/8.0_dosing_title.svg) no-repeat;
+}
+#content #acc.graph #support.acc_btn span{
+background: url(../images/8.0_support_title.svg) no-repeat;
+}
+#content #acc.graph .acc_btn:after{
+content: "slug";
+width:32px;
+height:32px;
+background:url(../images/8.0_arrow_closed.svg) no-repeat;
+position:absolute;
+top: 10px;
+right: 20px;
+}
+#content #acc.graph .open.acc_btn:after{
+	background:url(../images/8.0_arrow_open.svg) no-repeat;
+}
+#content #acc.graph .acc_content{
+  height: 100px;
+  background: white;
+}
+#content #acc.graph .acc_content .sub_headline{
+position:absolute;
+left: 51px;
+top: 53px;
+display: inline-block;
+width: 278px;
+opacity:0;
+}
+#content #acc.graph .acc_content .img{
+position:absolute;
+right: 0px;
+opacity:0;
+}
+#content #acc.graph #survival.acc_btn .acc_content .img{
+background:url(../images/1_8_0-summary-specialists.png) no-repeat;
+background-size: contain;
+width: 166px;
+height: 150px;
+top: 56px;
+right: 50px;
+}
+#content #acc.graph #moa.acc_btn .acc_content .img{
+background: url(../images/2_8_0-summary-specialists.png) no-repeat;
+width: 195px;
+height: 179px;
+background-size: contain;
+top: 0px;
+right: 50px;
+}
+#content #acc.graph #safety.acc_btn .acc_content .img{
+background:url(../images/3_8_0-summary-specialists.png) no-repeat;
+
+width: 110px;
+height: 150px;
+background-size: contain;
+right: 79px;
+top: 54px;
+}
+#content #acc.graph #patient.acc_btn .acc_content .img{
+background: url(../images/4_8_0-summary-specialists.png) no-repeat;
+width: 321px;
+height: 150px;
+bottom: 5px;
+background-size: contain;
+right: -35px;
+top: 18px;
+}
+#content #acc.graph #dosing.acc_btn .acc_content .img{
+background: url(../images/5_8_0-summary-specialists.png) no-repeat;
+width: 250px;
+height: 150px;
+top: 0px;
+background-size: contain;
+right: 21px;
+}
+#content #acc.graph #support.acc_btn .acc_content .img{
+background: url(../images/6_8_0-summary-specialists.png) no-repeat;
+width: 125px;
+height: 125px;
+background-size: contain;
+top: 42px;
+right: 50px;
+}
+#content p.fair_use{
     position: absolute;
     top: 657px;
     left: 90px;
     width: 980px;
 }
-#container p.graph_footer{
+#content p.graph_footer{
   position:absolute;
   left:90px;
   top: 618px;

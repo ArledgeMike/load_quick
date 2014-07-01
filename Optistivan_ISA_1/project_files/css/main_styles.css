@@ -1,7 +1,7 @@
 body,html{
   overflow:hidden;
 }
-.container{
+#content{
   width: 100%;
   height: 100%;
   background: url(../images/landing_page_background.jpg);
@@ -10,7 +10,7 @@ body,html{
   display: block;
   overflow:hidden;
 }
-#container #logo{
+#content #logo{
   width:150px;
   height:85px;
   background: url(../images/Optistivan_logo.svg);
@@ -20,13 +20,13 @@ body,html{
   top: 53px;
   left: 100px;
 }
-.container #headline{
+#content #headline{
   background:url(../images/1.0_headline.svg) no-repeat;
   position:absolute;
   left:44px;
   top:414px;
 }
-.container #sub_headline{
+#content #sub_headline{
   background: url(../images/1.0_sub_headline.svg) no-repeat;
   position:absolute;
   top:111px;
@@ -34,13 +34,13 @@ body,html{
   width:410px;
   height:119px;
 }  
-.container nav{
+#content nav{
   position: absolute;
   top: 249px;
   right: 0px;
   left: inherit;
 }
-.container nav ul li{
+#content nav ul li{
   float: none;
   display: block;
   margin-bottom: 26px;
@@ -49,7 +49,7 @@ body,html{
   width: 415px;
   position: relative;
 }
-.container nav ul li:after{
+#content nav ul li:after{
   content: "slug";
   width:30px;
   height:30px;
@@ -62,7 +62,7 @@ body,html{
   overflow: hidden;
   text-indent: 99px;
 }
-.container nav ul li a{
+#content nav ul li a{
   width: 100%;
   height: 100%;
   color: #6c6d6f;
@@ -73,16 +73,16 @@ body,html{
   text-indent: 10px;
   background-position: 10px 10px !important;
 }
-.container nav ul li a#survival{
+#content nav ul li a#survival{
   background: url(../images/1.0_survival_btn.svg) no-repeat 10px 10px;
 }
-.container nav ul li a#safety{
+#content nav ul li a#safety{
   background: url(../images/1.0_safety_btn.svg) no-repeat;
 }
-.container nav ul li a#infusion{
+#content nav ul li a#infusion{
   background: url(../images/1.0_infusion_btn.svg) no-repeat;
 }  
-.container #circle{
+#content #circle{
   width: 578px;
   height: 578px;
   background: rgba(225, 225, 225, 0.5);
@@ -91,7 +91,7 @@ body,html{
   left: -157px;
   bottom: -37px;
 }
-.container #circle #innercircle{
+#content #circle #innercircle{
   width: 525px;
   height: 525px;
   background: rgba(107, 172, 161, .7);
@@ -101,7 +101,7 @@ body,html{
   top: 25px;
   box-shadow: 2px 2px 15px #999999;
 }
-.container #circle #innercircle #headline{
+#content #circle #innercircle #headline{
   background: url(../images/1.0_headline.svg) no-repeat;
   width:305px;
   height:180px;

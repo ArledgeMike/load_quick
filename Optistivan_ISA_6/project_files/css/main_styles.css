@@ -3,43 +3,65 @@
   height:100%;
   display:block;
 }
-
 #container .section .headline{
   background: url(../images/6.0_headline.svg) no-repeat;	
   width:745px;
   height:105px;
   position:absolute;
- 
   left:94px;
   top:90px;
 }
 #container .section{
-	background:url(../images/6.0_background.jpg) no-repeat;
-	background-size:contain;
-	width:100%;
-	height:100%;
+  background:url(../images/6.0_background.jpg) no-repeat;
+  background-size:contain;
+  width:100%;
+  height:100%;
 }
 #container .section .sub_headline{
   position:absolute;
   top:200px;
   left:94px;
-  width:584px;
   font-size: 18px;
   line-height: 21px;}
 #container .section .graph{
   width: 750px;
   height: 392px;
-  background: url(../images/6.0_graph.jpg) no-repeat;
   position:absolute;
-  left:158px;
+  left: 90px;
   top: 272px;
 }
-
+#container .section#infusion .graph .bag{
+width: 362px;
+height:300px;
+position:relative;
+float:left;
+}
+#container .section#infusion .graph .bag p{
+  position:absolute;
+  top: 105px;
+  
+  font-size: 45px;
+  color: #6c6d6f;
+  font-weight: bold;
+}
+#container .section#infusion .graph #opt.bag{
+background: url(../images/6.0_opt_bag.svg) no-repeat;
+}
+#container .section#infusion .graph #gen.bag{
+background: url(../images/6.0_gen_bag.svg) no-repeat;
+left: 50px;
+}
+#container p.body{
+  position:absolute;
+  top: 600px;
+  left:90px;
+  width: 575px;
+}
 #container p.fair_use{
-    position: absolute;
-    top: 657px;
-    left: 90px;
-    width: 980px;
+  position: absolute;
+  top: 657px;
+  left: 90px;
+  width: 980px;
 }
 #container p.graph_footer{
   position:absolute;
@@ -49,20 +71,23 @@
   font-size:13px;
 }
 #container .section#dosing{
-	background:url(../images/6.1_background.jpg) no-repeat;
-	width:100%;
-	height:100%;
-	background-size:contain;
+  background:url(../images/6.1_background.jpg) no-repeat;
+  width:100%;
+  height:100%;
+  background-size:contain;
 }
 #container .section#dosing .headline{
-    background: url(../images/6.1_headline.svg) no-repeat;
-    }
-#container .section#dosing .graph{
-    background: url(../images/6.1_graph.png) no-repeat;
-    width:420px;
-    height:401px;
-    background-size:contain;
-    left:570px;
+  background: url(../images/6.1_headline.svg) no-repeat;
 }
+#container .section#dosing .graph{
+  background: url(../images/6.1_graph.png) no-repeat;
+  width:420px;
+  height:401px;
+  background-size:contain;
+  left:570px;
+}
+
+
+
 
 

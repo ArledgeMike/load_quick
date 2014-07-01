@@ -99,12 +99,14 @@ nav ul li a{
 }
 #isi{
   width:100%;
-  height: 100%;
+  /* height: 100%; */
   position:fixed;
   bottom: 0px;
   top: 100%;
   left:0px;
-  z-index:8;
+  z-index:999;
+  padding-bottom: 320px;
+  
 }
 #isi #header{
   width:706px;
@@ -117,6 +119,18 @@ nav ul li a{
   position:relative;
   cursor:pointer;  
 }
+#isi #header:before{
+  content:"slug";
+  width:50px;
+  height: 39px;
+  background: url(../../images/isa_template/isi_swoop.png) no-repeat;
+  overflow:hidden;
+  text-indent:999px;
+  display: inline-block;
+  position: absolute;
+  left: -31px;
+  top: 1px;
+}
 #isi #header p{
   line-height: 41px;	
   text-indent: 130px;
@@ -124,10 +138,12 @@ nav ul li a{
 #isi #body{
   overflow-y:scroll;
   float: left;
-  padding: 21px 25px 200px 25px;
+  padding: 21px 25px 800px 25px;
   border-top: thin solid #f3f1e9;
   height: 150%;
   background: white;
+  /* margin-bottom: 200px; */
+  
 }
 #isi #body #black_box{
   border:thin black solid;
@@ -156,37 +172,41 @@ footer{
   bottom:0px;
   left:0px;
   background: #f3f1e9;
-  z-index:9;
+  z-index:9999;
 }
 footer ul{
-  width: 45%;
+  width: 391px;
   height: 100%;
   float:left;
-  padding-top: 10px;
-  padding-left: 30px;
+  padding-top: 12px;
+  padding-left: 50px;
 }
 footer ul.right_menu{
   float:right;
   text-align: right;
-  padding-right: 29px;
+  /* padding-right: 32px; */
+  position: relative;
+  /* left: -565px; */
+  width: 427px;
 }
 footer ul li{
   display: inline-block;
 }
 footer ul li.first_item{
   margin-right: 24px;
-  margin-left:20px;
+  /* margin-left:20px; */
 }
 footer ul li a{
   font-weight:bold;
   text-decoration:none;
   color: #6d6e70;
   position:relative;
-  top: 7px;
+  top: 0px;
+  line-height:29px;
 }
 footer ul li a.icon:before{
   position:relative;
-  top: -7px;
+  top: 0px;
 }
 
 /*ICON BUTTONS */
@@ -241,6 +261,7 @@ footer ul li a.icon:before{
   background: url(../../images/isa_template/icon_opt_in.svg) no-repeat;
   text-indent:999px;
   overflow:hidden;
+  top: -0px;
 }
 #references.icon:before{
   content:"/slug";
@@ -250,7 +271,7 @@ footer ul li a.icon:before{
   width: 35px;
   height: 35px;
   position: relative;
-  top: -2px;
+  top: 2px;
 }
 #medication_guide.icon:before{
   content:"/slug";
@@ -263,6 +284,28 @@ footer ul li a.icon:before{
   background: url(../../images/isa_template/icon_prescribing_info.svg) no-repeat;
   text-indent:999px;
   overflow:hidden;
+  /* left: -81px; */
+}
+/*MODALS */
+.modal_bg{
+  width:100%;
+  height:100%;
+  background: rgba(0,0,0,.4);
+  position:fixed;
+  top:0px;
+  left:0px;
+  display:none;
+  z-index:99999;
+}
+.modal_win{
+	width:540px;
+	height:350px;
+	background:white;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-top:-200px;
+	margin-left:-270px;
 }
 
 /*Animations*/
@@ -276,4 +319,7 @@ footer ul li a.icon:before{
 .start_anim{
 	margin-top:-695px;
 }
+
+
+
 

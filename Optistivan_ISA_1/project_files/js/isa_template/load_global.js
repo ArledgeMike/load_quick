@@ -6,7 +6,7 @@ $(document).ready(function(){
   function load_globals(){
     global_elements.forEach(function(entry){
       $.get(entry, function(data){
-        $('.container').prepend(data);
+        $('#content').prepend(data);
       });
     });
   }
