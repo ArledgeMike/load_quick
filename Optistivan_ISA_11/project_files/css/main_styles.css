@@ -1,52 +1,167 @@
-#container{
+#content{
   width:100%;
   height:100%;
   display:block;
-}
-#container .section{
 	background:url(../images/11.0_background.jpg) no-repeat;
+		background-size: contain;
+}
+#content .section{
+
 	width:100%;
 	height:100%;
-	background-size: contain;
+
 }
-#container .section .headline{
+#content .section .headline{
   background: url(../images/11.0_headline.svg) no-repeat;	
   width:763px;
   height:105px;
   position:absolute;
- 
   left:94px;
   top:90px;
 }
-#container .section .sub_headline{
+#content .section .sub_headline{
   position:absolute;
   top:200px;
   left:94px;
   width:584px;
   font-size: 18px;
   line-height: 21px;}
-#container .section .graph{
-  background: url(../images/11.0_graph.png) no-repeat;
+#content .section .graph{
+  /* background: url(../images/11.0_graph.png) no-repeat; */
   width:550px;
   height:340px;
   background-size: contain;
   position:absolute;
-  left: 46px;
+  left: 92px;
   top: 263px;
+}
+#content .section .graph ul{
+  list-style-type:none;
+  width: 100%;
+  margin-left: 0px;
+  padding-left: 0px;
+  width: 525px;
+  margin-bottom: 29px;
+}
+#content .section .graph ul li{
+    width: 100%;
+
+    /* background: blue; */
+    margin-bottom: 12px;
+    /* opacity: .4; */
+    margin-left: 0px;
+    padding-left: 0px;
+    font-size: 13px;
+    font-weight: bold;
+}
+#content .section .graph ul li.title{
+    height: 28px;
+    border-bottom: thin solid #4d4d4f;
+}
+#content .section .graph ul li.btn{
+    height: 38px;
+
+    background-position: 55px 11px !important;
+    margin-bottom: 21px;
+    cursor: pointer;
+    display: block;
+}
+#content .section .graph ul li.btn:before{
+content: "/slug";
+width: 48px;
+height: 47px;
+overflow:hidden;
+text-indent:9999px;
+position:absolute;
+display:block;
 
 }
 
-#container p.fair_use{
+#content .section .graph ul li#tcell.btn{
+background: url(../images/11.0_tcell_title.svg) no-repeat;
+}
+#content .section .graph ul li#tcell.btn:before{
+background: url(../images/tcell_button.png) no-repeat;
+}
+
+#content .section .graph ul li#defense.btn{
+background: url(../images/11.0_defense_title.svg) no-repeat;
+}
+#content .section .graph ul li#defense.btn:before{
+background: url(../images/defense_button.png) no-repeat;
+}
+
+#content .section .graph ul li#targets.btn{
+background: url(../images/11.0_targets_title.svg) no-repeat;
+}
+#content .section .graph ul li#targets.btn:before{
+background: url(../images/targets_button.png) no-repeat;
+}
+
+
+
+#content .section .graph ul li#helps.btn{
+background: url(../images/11.0_helps_title.svg) no-repeat;
+}
+#content .section .graph ul li#helps.btn:before{
+background: url(../images/helps_button.png) no-repeat;
+}
+
+#content #vid_container{
+width:100%;
+height:100%;
+position:fixed;
+top:0px;
+left:0px;
+display:none;
+cursor:pointer;
+z-index:999999;
+
+}
+#content #vid_container .exit_btn{
+position:fixed;
+top:20px;
+right:20px;
+width:45px;
+height:45px;
+background:black;
+color: white;
+font-size: 60px;
+border-radius:55px;
+font-weight: bold;
+text-indent: 3px;
+line-height: 46px;
+overflow: hidden;
+cursor:pointer;
+z-index:999999999;
+}
+
+#content p.fair_use{
     position: absolute;
     top: 646px;
     left: 94px;
     width: 680px;
 }
-#container p.graph_footer{
+#content p.graph_footer{
   position:absolute;
   left:90px;
   top: 618px;
   width:700px;
   font-size:13px;
 }
+
+.cell{
+width:212px;
+height:212px;
+background: url(../images/cell.png) no-repeat;
+position:absolute;
+left: 653px;
+height:350px;
+top: 193px;
+}
+
+
+
+
+
 
