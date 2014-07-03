@@ -1,14 +1,17 @@
 #content{
   width:100%;
   height:100%;
-  display:block;
-	background:url(../images/11.0_background.jpg) no-repeat;
-		background-size: contain;
-}
+ }
 #content .section{
 
 	width:100%;
 	height:100%;
+
+	z-index: 9999;
+
+	max-width: 1024px;
+
+	max-height: 768px;
 
 }
 #content .section .headline{
@@ -106,6 +109,9 @@ background: url(../images/11.0_helps_title.svg) no-repeat;
 #content .section .graph ul li#helps.btn:before{
 background: url(../images/helps_button.png) no-repeat;
 }
+#content .section .graph ul li.btn.play:before{
+background: url(../images/play_button.png) no-repeat !important;
+}
 
 #content #vid_container{
 width:100%;
@@ -158,6 +164,18 @@ position:absolute;
 left: 653px;
 height:350px;
 top: 193px;
+}
+#background{
+width:100%;
+height:100%;
+ display:block;
+	background-image:url(../images/11.0_background.jpg);
+       background-repeat:no-repeat;
+position: absolute;
+top:0px;
+left:0px;
+
+background-size: contain;
 }
 
 

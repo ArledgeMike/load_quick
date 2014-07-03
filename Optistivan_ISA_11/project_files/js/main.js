@@ -1,7 +1,8 @@
 var isa = {
   video_play: false,
   touch_start: 0,
-  touch_end:0, 
+  touch_end:0,
+  v: "", 
   
   init: function(){
   
@@ -24,40 +25,77 @@ var isa = {
   },
   
   setup_video: function(){
-    var v = document.getElementsByTagName("video")[0];
-    
-      $('.graph ul li.btn').on('click', function(){
-      rel = $(this).attr('rel');
+      isa.v = document.getElementsByTagName("video")[0];
+      hammer_object = Hammer(isa.v);
+  // 	$('.graph ul li.btn.play').on('click', function(){
 
-      console.log(rel);
-      $('#vid_container video').attr('src', rel);
-      $('#vid_container').fadeIn(1000, function(){
-        v.play();
-	isa.video_play = true;
+    //      console.log("movie click");
+//		$('#vid_container').fadeIn(1000, function(){
+  //        isa.v.play();
+//	  isa.video_play = true;
+  //    });
+  //  });
+       
+      $('.graph ul li.btn').on('click', function(){
+        if ( $(this).hasClass('play') ){
+                 console.log("play the movie");
+		 	$('#vid_container').fadeIn(1000, function(){
+         isa.v.play();
+	  isa.video_play = true;
       });
-    });
-    $('.exit_btn, #vid_container').on('click', function(){
+
+	}else{
+	   rel = $(this).attr('rel');
+	   bg = $(this).attr('data-bg');
+           $('.graph ul li.btn.play').removeClass('play');
+         
+	
+	   $(this).addClass('play');
+           console.log(rel,  bg);
+           $('#vid_container video').attr('src', rel);
+           $('#background').fadeOut(function(){
+	     $(this).css("background-image" , "url(project_files/images/"+ bg + ")" ).fadeIn();
+	   });
+      //});
+     
+
+   hammer_object.on('click', function(){
       if(isa.video_play){
-        v.pause();
+        isa.v.pause();
         isa.video_play = false;
       }else{
-        v.play();
+        isa.v.play();
         isa.video_play = true;
       }
       console.log("clicked");
     });
-  v.addEventListener("ended", function(){
-   v.pause();
-   isa.video_play = false;
-   $('#vid_container').addClass('end');
-   $('.end').on('click', function(){
-      $(this).fadeOut(function(){ $('#vid_container').removeClass('end');     });
-   });   
+   
+  
+   isa.v.addEventListener("ended", isa.video_ended);
+      
+      } 
   });
-
-
+    },
+  change_background: function(){
   
+  },
+  video_ended: function(){
+    isa.v.pause();
+     isa.video_play = false;
+  //   $('#vid_container').addClass('end');
+  //   $('.end').on('click', function(){
+  //     $(this).fadeOut(function(){ $('#vid_container').removeClass('end');     });
+  //   });
+     hammer_object.on("swipeup", isa.clean_up_video);
+
+  },
+  clean_up_video: function(event){
   
+   $('#vid_container').fadeOut(function(){
+	  hammer_object.off("swipeup", isa.clean_up_video);
+	  console.log("cleaned up");
+
+	});
   }
-  
-}
+ 
+  }
