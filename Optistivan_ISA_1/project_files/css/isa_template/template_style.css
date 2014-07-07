@@ -99,7 +99,6 @@ nav ul li a{
 }
 #isi{
   width:100%;
-  /* height: 100%; */
   position:fixed;
   bottom: 0px;
   top: 100%;
@@ -133,7 +132,9 @@ nav ul li a{
 }
 #isi #header p{
   line-height: 41px;	
-  text-indent: 130px;
+  text-indent: 56px;
+  font-weight: bold;
+  font-size: 13px;
 }
 #isi #body{
   overflow-y:scroll;
@@ -142,7 +143,6 @@ nav ul li a{
   border-top: thin solid #f3f1e9;
   height: 150%;
   background: white;
-  /* margin-bottom: 200px; */
   
 }
 #isi #body #black_box{
@@ -184,9 +184,8 @@ footer ul{
 footer ul.right_menu{
   float:right;
   text-align: right;
-  /* padding-right: 32px; */
+  padding-right: 13px;
   position: relative;
-  /* left: -565px; */
   width: 427px;
 }
 footer ul li{
@@ -194,7 +193,6 @@ footer ul li{
 }
 footer ul li.first_item{
   margin-right: 24px;
-  /* margin-left:20px; */
 }
 footer ul li a{
   font-weight:bold;
@@ -203,6 +201,7 @@ footer ul li a{
   position:relative;
   top: 0px;
   line-height:29px;
+  font-size: 13px;
 }
 footer ul li a.icon:before{
   position:relative;
@@ -284,7 +283,6 @@ footer ul li a.icon:before{
   background: url(../../images/isa_template/icon_prescribing_info.svg) no-repeat;
   text-indent:999px;
   overflow:hidden;
-  /* left: -81px; */
 }
 /*MODALS */
 .modal_bg{
@@ -319,6 +317,9 @@ footer ul li a.icon:before{
 .start_anim{
 	margin-top:-695px;
 }
+
+
+
 
 
 

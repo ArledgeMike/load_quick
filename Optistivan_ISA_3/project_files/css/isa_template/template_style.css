@@ -133,7 +133,9 @@ nav ul li a{
 }
 #isi #header p{
   line-height: 41px;	
-  text-indent: 130px;
+  text-indent: 56px;
+  font-weight: bold;
+  font-size: 13px;
 }
 #isi #body{
   overflow-y:scroll;
@@ -184,7 +186,7 @@ footer ul{
 footer ul.right_menu{
   float:right;
   text-align: right;
-  /* padding-right: 32px; */
+  padding-right: 13px;
   position: relative;
   /* left: -565px; */
   width: 427px;
@@ -203,6 +205,7 @@ footer ul li a{
   position:relative;
   top: 0px;
   line-height:29px;
+  font-size: 13px;
 }
 footer ul li a.icon:before{
   position:relative;
@@ -319,6 +322,9 @@ footer ul li a.icon:before{
 .start_anim{
 	margin-top:-695px;
 }
+
+
+
 
 
 
