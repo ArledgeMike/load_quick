@@ -21,9 +21,8 @@
   position:absolute;
   top:200px;
   left:94px;
-  font-size: 18px;
-  line-height: 21px;}
-#container .section .graph{
+}
+  #container .section .graph{
   width: 750px;
   height: 392px;
   position:absolute;
@@ -68,7 +67,6 @@ left: 50px;
   left:90px;
   top: 618px;
   width:700px;
-  font-size:13px;
 }
 #container .section#dosing{
   background:url(../images/6.1_background.jpg) no-repeat;

@@ -90,10 +90,11 @@ right: 20px;
 #content #acc.graph .acc_content .sub_headline{
 position:absolute;
 left: 51px;
-top: 53px;
+top: 68px;
 display: inline-block;
 width: 278px;
 opacity:0;
+text-indent: 0px;
 }
 #content #acc.graph .acc_content .img{
 position:absolute;
@@ -163,3 +164,5 @@ right: 50px;
   width:700px;
   font-size:13px;
 }
+
+

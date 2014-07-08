@@ -3,16 +3,11 @@
   height:100%;
  }
 #content .section{
-
 	width:100%;
 	height:100%;
-
 	z-index: 9999;
-
 	max-width: 1024px;
-
 	max-height: 768px;
-
 }
 #content .section .headline{
   background: url(../images/11.0_headline.svg) no-repeat;	
@@ -48,10 +43,7 @@
 }
 #content .section .graph ul li{
     width: 100%;
-
-    /* background: blue; */
     margin-bottom: 12px;
-    /* opacity: .4; */
     margin-left: 0px;
     padding-left: 0px;
     font-size: 13px;
@@ -59,7 +51,7 @@
 }
 #content .section .graph ul li.title{
     height: 28px;
-    border-bottom: thin solid #4d4d4f;
+    border-bottom: thin solid #d9d5c5;
 }
 #content .section .graph ul li.btn{
     height: 38px;

@@ -5,7 +5,7 @@ var isa = {
   
     console.log("isa called");
     $('footer ul li a').on("click", isa.open_modal);
-    $('.modal_win').on("click", isa.close_modal);
+    $('.modal_win .exit_modal').on("click", isa.close_modal);
   },
   
   configure_click: function(event){
@@ -46,10 +46,16 @@ var isa = {
       },1000);
     },
   open_modal: function(){
-  
-        isa.modal = true;  	  
+    html = $(this).attr('rel');
+    console
+    $.get(html, function(data){
+	    $('.modal_content').prepend(data);
+         isa.modal = true;  	  
     $('.modal_bg').fadeIn();
+
     
+    });
+       
     
   
   },

@@ -64,16 +64,21 @@ line-height:15px;
 color: #4d4d4f;
 position:absolute;
 top: 630px;
-left: 129px;
+left: 150px;
 }
 #container #safety.section .graph{
   background:url(../images/4.1_graph.svg) no-repeat;
   height: 360px;
 }
 #container .section#nsclc_safety_two .graph{
-  background:url(../images/4.3_graph.svg) no-repeat;
   height: 315px;
-  /* background-size: contain; */
+}
+#container .section#nsclc_safety_two .graph .header{
+background: url(../images/4.3_graph_header.svg) no-repeat;
+}
+#container .section#nsclc_safety_two .graph .body{
+background: url(../images/4.3_graph_body.svg) no-repeat;
+
 }
 
 

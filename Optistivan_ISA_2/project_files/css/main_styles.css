@@ -10,7 +10,7 @@
   position:absolute;
   left:94px;
   top:90px;
-  z-index:99999;
+  z-index: 999;
 }
 #container #efficacy_four .headline{
   background:url(../images/2.3_headline.svg) no-repeat;
@@ -29,7 +29,7 @@
   position:absolute;
   top:145px;
   left:94px;
-  width:644px;
+  width: 682px;
 }
 #container #efficacy_six.section, #container #efficacy_three.section{
 background: url(../images/2.5_background.jpg) no-repeat;
@@ -89,6 +89,8 @@ background-size:contain;
 #container #efficacy_six p.graph_footer{
   top:615px;
 }
+
+
 
 
 

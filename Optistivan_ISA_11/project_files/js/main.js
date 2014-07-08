@@ -59,7 +59,8 @@ var isa = {
       //});
      
 
-   hammer_object.on('click', function(){
+   hammer_object.on('click touch', function(){
+	   console.log("pause click");
       if(isa.video_play){
         isa.v.pause();
         isa.video_play = false;

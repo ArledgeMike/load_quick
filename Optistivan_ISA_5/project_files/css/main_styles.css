@@ -52,7 +52,7 @@
 #container .section .efficacy_btn{
 background: url(../images/efficacy_button.svg) no-repeat;
 width:147px;
-height: 37px;
+height: 42px;
 position:absolute;
 right: 80px;
 top: 608px;
@@ -73,6 +73,3 @@ cursor:pointer;
 #container .section#beverley .graph{
   background: url(../images/5.1_graph.svg) no-repeat;
 }
-
-
-
