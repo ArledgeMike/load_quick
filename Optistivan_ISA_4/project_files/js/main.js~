@@ -1,6 +1,5 @@
 var isa = {
-  fpage_index : 1,
-  current_pos: 0, 
+  fpage_index : 1, 
   init: function(){
   
     console.log("isa called");
@@ -80,10 +79,9 @@ var isa = {
     },
   
   scroll_graph_up: function(event){
-	 current_offset = $(this).parent().parent().find('.body svg')pos();
+	 current_offset = $(this).parent().parent().find('.body svg');
          console.log(current_offset); 
-	 scroll_increment = 25;
-	 
+	  
   //  graph_body = $(event.target).parent().parent().find('.body');
   //  bg = graph_body.css('background-position-y').replace('px', ""); 
   //  n =  bg - 95 ; 
