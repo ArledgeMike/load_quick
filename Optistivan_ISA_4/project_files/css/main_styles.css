@@ -2,7 +2,7 @@
   width:100%;
   height:100%;
   display:block;
-  background:url(../images/4.0_background.jpg) no-repeat;
+  //background:url(../images/4.0_background.jpg) no-repeat;
   width: 100%;
   background-size: contain;
   height: 100% !important;
@@ -20,6 +20,7 @@
   top: 195px;
   left:94px;
   width:584px;
+  line-height: 18px;
 }
 #container .section .graph{
   width: 899px;
@@ -36,21 +37,43 @@ background: url(../images/4.0_graph_header.svg) no-repeat;
 #container .section .graph .body{
 width:100%;
 height: 325px;
-background: url(../images/4.0_graph.svg)no-repeat;
+background: url(../images/4.0_graph.svg)no-repeat 0 0;
 overflow:hidden;
-background-position-y: 0px;
+//background-position-y: 0px;
+}
+#container .section .graph #controls{
+position:absolute;
+left: -50px;
+top: 323px;
+}
+
+#container .section .graph #controls .up{
+width:35px;
+height:35px;
+cursor:pointer;
+background: url(../images/down_btn.svg) no-repeat;
+background-size: contain;
+}
+#container .section .graph #controls .down{
+width:35px;
+cursor:pointer;
+height:35px;
+background: url(../images/down_btn.svg) no-repeat;
+background-size: contain;
+
+margin-top: 25px;
 }
 #container #nsclc_safety.section .graph .header{
 background: url(../images/4.2_graph_header.svg) no-repeat;
 
 }
 #container #nsclc_safety.section .graph .body{
-background: url(../images/4.2_graph.svg) no-repeat;
+background: url(../images/4.2_graph.svg) no-repeat 0 0; 
 
 }
 #container p.graph_footer{
   position:absolute;
-  left:90px;
+  left: 94px;
   top: 642px;
   width: 700px;
 }
@@ -77,16 +100,13 @@ left: 150px;
 background: url(../images/4.3_graph_header.svg) no-repeat;
 }
 #container .section#nsclc_safety_two .graph .body{
-background: url(../images/4.3_graph_body.svg) no-repeat;
+background: url(../images/4.3_graph_body.svg) no-repeat 0 0;
 
 }
 
+//background: url(../images/4.3_graph_header.svg) no-repeat;
+//}
+#container .section#nsclc_safety_two .graph .body{
+background: url(../images/4.3_graph_body.svg) no-repeat 0 0;
 
-
-
-
-
-
-
-
-
+}

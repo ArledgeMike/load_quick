@@ -31,9 +31,14 @@
   left:94px;
   width: 682px;
 }
+
+#container #efficacy_five.section .sub_headline{
+  line-height:16px;
+  
+}
 #container #efficacy_six.section, #container #efficacy_three.section{
-background: url(../images/2.5_background.jpg) no-repeat;
-background-size:contain;
+//background: url(../images/2.5_background.jpg) no-repeat;
+//background-size:contain;
 }
 #container .section .graph{
   width:837px;
@@ -72,9 +77,9 @@ background-size:contain;
 }
 #container p.graph_footer{
   position:absolute;
-  left: 165px;
+  left: 94px;
   top: 609px;
-  width: 640px;
+  width: 758px;
   /* font-size:13px; */
 }
 #container #efficacy_two p.graph_footer{
@@ -89,6 +94,7 @@ background-size:contain;
 #container #efficacy_six p.graph_footer{
   top:615px;
 }
+
 
 
 

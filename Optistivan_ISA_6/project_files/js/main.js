@@ -4,10 +4,13 @@ var isa = {
   init: function(){
   
     console.log("isa called");
-    $('footer ul li a').on("click", isa.open_modal);
-    $('.modal_win').on("click", isa.close_modal);
+    isa.start_animation();
   },
+  start_animation: function(){
   
+ //isa.animate_gen($('.graph #gen.liquid'), 6000) 
+//isa.animate_opt(3200);
+  },
   configure_click: function(event){
   
   },
@@ -64,7 +67,68 @@ var isa = {
     }
 
   
-  }
+  },
+
+	animate_opt: function(dur){
+		
+//		console.log("animate liquid");
+//	 $this = el;
+	 var w;
+    var i=0;
+  
+
+  $('.graph #opt.liquid').delay(2000).animate({
+  height:10
+  },{
+  easing: "easeOutCubic",
+    duration:dur,
+    start: function(){
+      w =  window.setInterval(function(){
+     $('#opt.bag p').text(i);
+     i++
+   },100);
+
+ //     console.log("step");
+  },
+    complete: function(){
+window.clearInterval(w);
+      
+    }
+});  
+	
+	
+	
+	}
+,	
+	animate_gen: function(el, dur){
+		console.log("animate liquid");
+	 $this = el;
+  var i=0;
+ var w; 
+
+  $this.delay(2000).animate({
+  height:10
+  },{
+  easing: "easeOutCubic",
+    duration:dur,
+    start: function(){
+       w =  window.setInterval(function(){
+     $('#gen.bag p').text(i);
+     i++
+   },100);
+ 
+      console.log("step");
+  },
+    complete: function(){
+window.clearInterval(w);
+      
+    }
+});  
+	
+	
+	
+	}	
+
 
 
 }

@@ -26,40 +26,36 @@ var isa = {
   
   setup_video: function(){
       isa.v = document.getElementsByTagName("video")[0];
+      
       hammer_object = Hammer(isa.v);
-  // 	$('.graph ul li.btn.play').on('click', function(){
-
-    //      console.log("movie click");
-//		$('#vid_container').fadeIn(1000, function(){
-  //        isa.v.play();
-//	  isa.video_play = true;
-  //    });
-  //  });
        
       $('.graph ul li.btn').on('click', function(){
         if ( $(this).hasClass('play') ){
-                 console.log("play the movie");
-		 	$('#vid_container').fadeIn(1000, function(){
-         isa.v.play();
-	  isa.video_play = true;
-      });
+          
+	  console.log("play the movie");
+	  
+	  $('#vid_container').fadeIn(1000, function(){
+            isa.v.play();
+	    isa.video_play = true;
+          });
 
 	}else{
-	   rel = $(this).attr('rel');
-	   bg = $(this).attr('data-bg');
-           $('.graph ul li.btn.play').removeClass('play');
-         
-	
-	   $(this).addClass('play');
-           console.log(rel,  bg);
-           $('#vid_container video').attr('src', rel);
-           $('#background').fadeOut(function(){
-	     $(this).css("background-image" , "url(project_files/images/"+ bg + ")" ).fadeIn();
-	   });
-      //});
+	   
+	  rel = $(this).attr('rel');
+	  bg = $(this).attr('data-bg');
+          
+	  $('.graph ul li.btn.play').removeClass('play');
+	  $(this).addClass('play');
+          console.log(rel,  bg);
+          $('#vid_container video').attr('src', rel);
+          $('#background').fadeOut(function(){
+	    $(this).css("background-image" , "url(project_files/images/"+ bg + ")" ).fadeIn();
+	  });
+	}
+      });
      
 
-   hammer_object.on('click touch', function(){
+   hammer_object.on('click', function(){
 	   console.log("pause click");
       if(isa.video_play){
         isa.v.pause();
@@ -67,15 +63,18 @@ var isa = {
       }else{
         isa.v.play();
         isa.video_play = true;
-      }
       console.log("clicked");
-    });
-   
+      }
+     });
+   $('#vid_container .exit_btn').on('click',function(){
+     isa.v.pause();
+     isa.v.currentTime = 0;
+     isa.clean_up_video();
+   });  
   
    isa.v.addEventListener("ended", isa.video_ended);
       
-      } 
-  });
+       
     },
   change_background: function(){
   

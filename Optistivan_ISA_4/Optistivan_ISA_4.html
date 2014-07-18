@@ -17,26 +17,26 @@
     <body>
       <nav>
         <ul>
-          <li class="first_item" ><a class="icon active " id="efficacy" href="#"></a></li>
-          <li><a class="icon" id="moa" href="#"></a></li>
-          <li><a class="icon" id="safety" href="#"></a></li>
-          <li><a class="icon" id="patient_profile" href="#"></a></li>
-          <li><a class="icon" id="dosing" href="#"></a></li>
-          <li><a class="icon" id="cost" href="#"></a></li>
-          <li><a class="icon" id="summary" href="#"></a></li>
+          <li class="first_item" ><a class="icon" id="efficacy" onclick = "void(0)" href="veeva:gotoSlide(Optistivan_ISA_2.zip)"></a></li>
+          <li><a class="icon" id="moa" href="veeva:gotoSlide(Optistivan_ISA_11.zip)" onclick = "void(0)"></a></li>
+          <li><a class="icon" id="safety" href="veeva:gotoSlide(Optistivan_ISA_4.zip)"onclick = "void(0)"></a></li>
+          <li><a class="icon" id="patient_profile" href="veeva:gotoSlide(Optistivan_ISA_5.zip)"onclick = "void(0)"></a></li>
+          <li><a class="icon" id="dosing" href="veeva:gotoSlide(Optistivan_ISA_6.zip)"onclick = "void(0)"></a></li>
+          <li><a class="icon" id="cost" href="veeva:gotoSlide(Optistivan_ISA_7.zip)"onclick = "void(0)"></a></li>
+          <li><a class="icon" id="summary" href="veeva:gotoSlide(Optistivan_ISA_8.zip)"onclick = "void(0)"></a></li>
         </ul>
       </nav>
       <div id="link_controls">
         <ul>
-          <li class="first_item"><a class="icon" id="mcrpc" href="#">mCRPC</a></li>
-          <li><a class="icon" id="nsclc" href="#">NSCLC</a></li>
+          <li class="first_item"><a class="icon active" id="mcrpc"onclick = "void(0)" href="#">mCRPC</a></li>
+          <li><a class="icon" id="nsclc"onclick = "void(0)" href="#">NSCLC</a></li>
         </ul>
       </div>
       <div id="content">
         <!-- CONTENT INSERTED HERE -->
       </div>
       <div id="isi" class="start_isi" >
-        <div id="header">
+        <div id="header" onclick = "void(0)">
           <p>Important Safety Information, including boxed warning for immune-mediated adverse reactions <a class="icon" id="isi_btn"></a><p>
         </div>
         <div id="body">
@@ -124,16 +124,20 @@
     </div>
     <footer>
       <ul>
-        <li class="first_item"><a class="icon" id="opt_in" href="#">Opt-in</a></li>
-        <li><a class="icon" id="references" href="#">References</a></li>
+        <li class="first_item"><a class="icon"onclick = "void(0)" id="opt_in" href="#">Opt-in</a></li>
+        <li><a class="icon" id="references"onclick = "void(0)" href="#">References</a></li>
       </ul>
       <ul class="right_menu">
-        <li class="first_item"><a class="icon" id="medication_guide" href="#">Medication Guide</a></li>
-        <li><a class="icon" id="prescription_info" href="#">Prescription Information</a></li>
+        <li class="first_item"><a class="icon"onclick = "void(0)" id="medication_guide" rel="project_files/html/medguide.html" href="#">Medication Guide</a></li>
+        <li><a class="icon" id="prescription_info"onclick = "void(0)" href="#">Prescription Information</a></li>
       </ul>
     </footer>  
     <div class="modal_bg">
-	    <div class="modal_win"></div>
+	    
+	    <div class="modal_win">
+		    <div class="exit_modal" onclick = "void(0)"></div>
+		    <div class="modal_content"></div>
+	    </div>
     
     </div>
     <script src="project_files/js/isa_template/jquery.slimscroll.min.js"></script>
@@ -148,6 +152,4 @@
       </script>
     </body>
   </html>
-
-
 

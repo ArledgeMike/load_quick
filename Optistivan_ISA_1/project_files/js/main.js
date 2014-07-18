@@ -1,11 +1,10 @@
 var isa = {
-	modal: false,
   
   init: function(){
   
     console.log("isa called");
-    $('footer ul li a').on("click", isa.open_modal);
-    $('.modal_win .exit_modal').on("click", isa.close_modal);
+  
+  
   },
   
   configure_click: function(event){
@@ -23,6 +22,7 @@ var isa = {
 
   unlock_scroll: function(){
     $('#container').fullpage({
+      touchSensitivity: 15,
       scrollingSpeed:1000,
       onLeave: function(index, nextIndex, direction){
 	isa.animate_test_out(index, nextIndex, direction);
@@ -44,33 +44,9 @@ var isa = {
       $('.section ').eq(index -1).animate({
 	opacity:0      
       },1000);
-    },
-  open_modal: function(){
-    html = $(this).attr('rel');
-    console
-    $.get(html, function(data){
-	    $('.modal_content').prepend(data);
-         isa.modal = true;  	  
-    $('.modal_bg').fadeIn();
-
-    
-    });
-       
-    
-  
-  },
-  close_modal: function(event){
-    
-	  if(isa.modal){
-      
-        $('.modal_bg').fadeOut();
-        isa.modal = false;
-      
-      event.stopPropagation();
     }
-
+     
   
-  }
 
 
 }

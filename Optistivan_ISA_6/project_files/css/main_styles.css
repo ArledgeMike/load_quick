@@ -12,7 +12,6 @@
   top:90px;
 }
 #container .section{
-  background:url(../images/6.0_background.jpg) no-repeat;
   background-size:contain;
   width:100%;
   height:100%;
@@ -46,6 +45,38 @@ float:left;
 #container .section#infusion .graph #opt.bag{
 background: url(../images/6.0_opt_bag.svg) no-repeat;
 }
+#container .section#infusion .graph #opt.bag .overlay, #container .section#infusion .graph #gen.bag .overlay {
+background: url(../images/6.0_bag_overlay.svg) no-repeat;
+height:236px;
+width:120px;
+position:absolute;
+
+left: 165px;
+top: 37px;
+}
+#container .section#infusion .graph .bag .liquid{
+width:120px;
+height:140px;
+position:absolute;
+bottom: 68px;
+left: 164px;
+overflow:hidden;
+}
+#container .section#infusion .graph #opt.liquid{
+ position: absolute;
+bottom: 155px;
+height: 144px;
+overflow: hidden;
+width: 121px;
+left: 165px;}
+#container .section#infusion .graph #gen.liquid{
+position: absolute;
+bottom: 155px;
+height: 144px;
+overflow: hidden;
+width: 121px;
+left: 575px;}
+
 #container .section#infusion .graph #gen.bag{
 background: url(../images/6.0_gen_bag.svg) no-repeat;
 left: 50px;
@@ -84,6 +115,10 @@ left: 50px;
   background-size:contain;
   left:570px;
 }
+
+
+
+
 
 
 

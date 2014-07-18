@@ -24,11 +24,8 @@
 #content .graph{
   width: 520px;
   position:absolute;
-  left:  145px;
+  left: 94px;
   top: 165px;
-}
-#content #acc.graph{
-
 }
 #content #acc.graph .acc_btn{
 width: 520px;
@@ -41,35 +38,15 @@ text-indent: 999px;
 margin-bottom: 15px;
 background-position-y: -50px;
 }
-#content #acc.graph .acc_btn.open{
-//height:150px;
-//background-position-y: 0px;
-}
 
 #content #acc.graph .acc_btn span{
-/* width:100%; */
 height: 50px;
 display:block;
 background-position-x: 40px !important;
 }
-
-#content #acc.graph #survival.acc_btn span{
-background: url(../images/8.0_survival_title.svg) no-repeat;
-}
-#content #acc.graph #moa.acc_btn span{
-background: url(../images/8.0_moa_title.svg) no-repeat;
-}
-#content #acc.graph #safety.acc_btn span{
-background: url(../images/8.0_safety_title.svg) no-repeat;
-}
-#content #acc.graph #patient.acc_btn span{
-background: url(../images/8.0_patient_title.svg) no-repeat;
-}
-#content #acc.graph #dosing.acc_btn span{
-background: url(../images/8.0_dosing_title.svg) no-repeat;
-}
-#content #acc.graph #support.acc_btn span{
-background: url(../images/8.0_support_title.svg) no-repeat;
+#content #acc.graph .acc_btn span svg{
+	position:absolute;
+	left:40px;
 }
 #content #acc.graph .acc_btn:after{
 content: "slug";
@@ -164,5 +141,6 @@ right: 50px;
   width:700px;
   font-size:13px;
 }
+
 
 

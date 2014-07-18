@@ -4,11 +4,24 @@
     <div class="headline"></div>
     <h2 class="sub_headline">Infusion time for Optistavin is half the infusion time of the market-leading biologic.</h2>
     <div class="graph">
+	     <div class="liquid" id="opt">
+		      <img src="project_files/images/6.0_liquid_opt.svg" />
+
+		    </div>
 	    <div class="bag" id="opt">
-		    <p>27.0</p>
+		 
+		    
+	    <div class="overlay"></div>
+		    <p>00.0</p>
+	    </div>
+	   <div class="liquid" id="gen">
+		    <img src="project_files/images/6.0_liquid_gen.svg" />
 	    </div>
 	    <div class="bag" id="gen">
-	    <p>27.0</p>
+	  
+		    <div class="overlay"></div>
+	
+		    <p>00.0</p>
 	    </div>
     </div>
     <p class="body">Withhold scheduled dose of Optistavin for any moderate immune-related adverse reactions or for symptomatic endocrinopathy.</p>
@@ -25,5 +38,9 @@
 </div>
 <script>
   isa.unlock_scroll();
+  isa.animate_opt(3200);
+  isa.animate_gen($('.graph #gen.liquid'), 6000) 
+
+
 </script>
 
