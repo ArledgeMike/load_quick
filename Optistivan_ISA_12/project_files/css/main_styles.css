@@ -24,11 +24,8 @@
 #content .graph{
   width: 520px;
   position:absolute;
-  left:  145px;
+  left: 94px;
   top: 165px;
-}
-#content #acc.graph{
-
 }
 #content #acc.graph .acc_btn{
 width: 520px;
@@ -41,35 +38,15 @@ text-indent: 999px;
 margin-bottom: 15px;
 background-position-y: -50px;
 }
-#content #acc.graph .acc_btn.open{
-//height:150px;
-//background-position-y: 0px;
-}
 
 #content #acc.graph .acc_btn span{
-/* width:100%; */
 height: 50px;
 display:block;
 background-position-x: 40px !important;
 }
-
-#content #acc.graph #survival.acc_btn span{
-background: url(../images/8.0_survival_title.svg) no-repeat;
-}
-#content #acc.graph #moa.acc_btn span{
-background: url(../images/8.0_moa_title.svg) no-repeat;
-}
-#content #acc.graph #safety.acc_btn span{
-background: url(../images/8.0_safety_title.svg) no-repeat;
-}
-#content #acc.graph #patient.acc_btn span{
-background: url(../images/8.0_patient_title.svg) no-repeat;
-}
-#content #acc.graph #dosing.acc_btn span{
-background: url(../images/8.0_dosing_title.svg) no-repeat;
-}
-#content #acc.graph #support.acc_btn span{
-background: url(../images/8.0_support_title.svg) no-repeat;
+#content #acc.graph .acc_btn span svg{
+	position:absolute;
+	left:40px;
 }
 #content #acc.graph .acc_btn:after{
 content: "slug";
@@ -101,55 +78,40 @@ position:absolute;
 right: 0px;
 opacity:0;
 }
-#content #acc.graph #survival.acc_btn .acc_content .img{
-background:url(../images/1_8_0-summary-specialists.png) no-repeat;
-background-size: contain;
-width: 166px;
-height: 150px;
-top: 56px;
-right: 50px;
+#content #acc.graph .acc_btn .acc_content{
+width: 520px;
+height:100px;
+background-color: white;
 }
-#content #acc.graph #moa.acc_btn .acc_content .img{
-background: url(../images/2_8_0-summary-specialists.png) no-repeat;
-width: 195px;
-height: 179px;
-background-size: contain;
-top: 0px;
-right: 50px;
-}
-#content #acc.graph #safety.acc_btn .acc_content .img{
-background:url(../images/3_8_0-summary-specialists.png) no-repeat;
+#content #acc.graph #survival.acc_btn .acc_content{
+background: url(../images/1_8_0-summary-specialists.png) no-repeat white top left;
+background-size:contain;
 
-width: 110px;
-height: 150px;
-background-size: contain;
-right: 79px;
-top: 54px;
 }
-#content #acc.graph #patient.acc_btn .acc_content .img{
-background: url(../images/4_8_0-summary-specialists.png) no-repeat;
-width: 321px;
-height: 150px;
-bottom: 5px;
-background-size: contain;
-right: -35px;
-top: 18px;
+#content #acc.graph #moa.acc_btn .acc_content {
+background: url(../images/2_8_0-summary-specialists.png) no-repeat white top right;
+background-size:contain;
+
 }
-#content #acc.graph #dosing.acc_btn .acc_content .img{
-background: url(../images/5_8_0-summary-specialists.png) no-repeat;
-width: 250px;
-height: 150px;
-top: 0px;
-background-size: contain;
-right: 21px;
+#content #acc.graph #safety.acc_btn .acc_content {
+background: url(../images/3_8_0-summary-specialists.png) no-repeat white top center;
+background-size:contain;
+
 }
-#content #acc.graph #support.acc_btn .acc_content .img{
-background: url(../images/6_8_0-summary-specialists.png) no-repeat;
-width: 125px;
-height: 125px;
-background-size: contain;
-top: 42px;
-right: 50px;
+#content #acc.graph #patient.acc_btn .acc_content{
+background: url(../images/4_8_0-summary-specialists.png) no-repeat white 90px 0px;
+background-size:contain;
+
+}
+#content #acc.graph #dosing.acc_btn .acc_content {
+background: url(../images/5_8_0-summary-specialists.png) no-repeat white 160px 0px;
+background-size:contain;
+
+}
+#content #acc.graph #support.acc_btn .acc_content {
+background: url(../images/6_8_0-summary-specialists.png) no-repeat white 20px 0px;
+background-size:contain;
+
 }
 #content p.fair_use{
     position: absolute;
@@ -164,5 +126,8 @@ right: 50px;
   width:700px;
   font-size:13px;
 }
+
+
+
 
 
