@@ -1,4 +1,4 @@
-var isa = {
+ isa = {
   fpage_index : 1,
   current_pos: 0, 
   init: function(){
@@ -6,12 +6,46 @@ var isa = {
     console.log("isa called");
   //  $('.graph #controls .up').on('click', isa.scroll_graph_up);
   //  $('.graph .header').on('click', isa.reset_graph);
-  },
-  
-  configure_click: function(event){
-  
-  },
+   $('.controls .up').on('click', function(){
+     console.log("scroll down");
+	   isa.scroll_down(event);
+     
+   });
 
+   $('.controls .down').on('click', function(){
+   console.log("scroll up");
+	   isa.scroll_up(event);
+   });
+  },
+  
+  scroll_down: function(event){
+ 	  t = event.target;
+	    $(t).addClass('inactive');
+	  $(t).parent().find('.down').removeClass('inactive');
+	  graph = $(t).parent().parent().find('.body');
+	//  g_height = graph.height() / 2;
+           $(graph).animate({
+		   top: 0 
+	   
+	   });
+
+ 
+  },
+  scroll_up: function(event){
+	  t = event.target;
+	  $(t).addClass('inactive');
+	  $(t).parent().find('.up').removeClass('inactive');
+	  graph = $(t).parent().parent().find('.body');
+	  g_height = graph.height();
+           $(graph).animate({
+		   top: (g_height * .5) * -1
+	   
+	   });
+
+
+   // graph_width = $(this);//.parent();//.parent();//.find('.body').css("height");
+//	    console.log(graph_width);
+  },
   show_controls_efficacy: function(show){
     if(show){
       $('#link_controls').fadeIn();
@@ -94,22 +128,7 @@ var isa = {
   },
 */
   
-  scroll_graph_down: function(direction){
-    graph_body = $(event.target).parent().parent().find('.body');
-    console.log(graph_body);
-    bg = graph_body.css('background-position-y').replace('px', ""); 
- // console.log(graph_body); 
-    n =  bg + 95 ; 
-    console.log(n); 
-    $(graph_body).stop().animate({
-       'background-position-y': n
-    });
-  },
-  reset_graph: function(){
-    $(this).next().animate({
-      'backgroundPositionY': 0
-    });
-  },
+ 
   go_to: function(){
 
     switch(isa.fpage_index){
