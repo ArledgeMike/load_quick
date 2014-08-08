@@ -78,7 +78,7 @@ var isa = {
 	opacity:0      
       },1000);
     },
-  
+/*  
   scroll_graph_up: function(event){
 	 current_offset = $(this).parent().parent().find('.body svg')pos();
          console.log(current_offset); 
@@ -92,7 +92,7 @@ var isa = {
   //  });
   
   },
-
+*/
   
   scroll_graph_down: function(direction){
     graph_body = $(event.target).parent().parent().find('.body');

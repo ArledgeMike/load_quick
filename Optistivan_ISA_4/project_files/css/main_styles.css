@@ -23,24 +23,35 @@
   line-height: 18px;
 }
 #container .section .graph{
-  width: 899px;
+  width: 820px;
   position:absolute;
-  right: 0px;
+  left: 75px;
   top: 255px;
+  height:400px;
+  overflow:hidden;
+  
+  /* background: red */
 }
 #container .section .graph .header{
-width:100%;
-height:34px;
-background: url(../images/4.0_graph_header.svg) no-repeat;
+width:764px;
+height:36px;
+background: url(../images/4.0_graph_header.svg) no-repeat white;
+float:right;
+z-index:9999;
+position:relative;
+
 
 }
 #container .section .graph .body{
-width:100%;
-height: 325px;
+width:764px;
+height: 610px;
 position:relative;
-//background: url(../images/4.0_graph.svg)no-repeat 0 0;
+background: url(../images/4.0_graph.svg)no-repeat 0 0;
 overflow:hidden;
 //background-position-y: 0px;
+float:right;
+top:0px
+
 }
 #container .section .graph .body svg{
   position:absolute;
@@ -49,8 +60,8 @@ overflow:hidden;
 }
 #container .section .graph #controls{
 position:absolute;
-left: -50px;
-top: 323px;
+left: 0px;
+top: 300px;
 }
 
 #container .section .graph #controls .up{
@@ -99,23 +110,17 @@ top: 630px;
 left: 150px;
 }
 #container #safety.section .graph{
-  background:url(../images/4.1_graph.svg) no-repeat;
+  background:url(../images/4.1_graph.svg)  55px 0px no-repeat;
   height: 360px;
 }
 #container .section#nsclc_safety_two .graph{
-  height: 315px;
+  /* height: 315px; */
 }
 #container .section#nsclc_safety_two .graph .header{
 background: url(../images/4.3_graph_header.svg) no-repeat;
 }
 #container .section#nsclc_safety_two .graph .body{
-background: url(../images/4.3_graph_body.svg) no-repeat 0 0;
-
+background: url(../images/4.3_graph.svg) no-repeat 0 0;
+height:450px
 }
 
-//background: url(../images/4.3_graph_header.svg) no-repeat;
-//}
-#container .section#nsclc_safety_two .graph .body{
-background: url(../images/4.3_graph_body.svg) no-repeat 0 0;
-
-}
