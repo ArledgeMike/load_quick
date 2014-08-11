@@ -36,8 +36,10 @@ $(document).ready(function(){
   function open_modal(event){
     event.preventDefault();
 	  html = $(this).attr('rel');
-    $.fn.fullpage.setAllowScrolling(false); 
-    $.get(html, function(data){
+	  if(typeof $.fn.fullpage.setAllowScrolling !== 'undefined'){
+      $.fn.fullpage.setAllowScrolling(false); 
+    }
+	$.get(html, function(data){
       $('.modal_content').prepend(data);
       isa.modal = true;  	  
       $('.modal_bg').fadeIn();
@@ -49,8 +51,10 @@ $(document).ready(function(){
 
   function close_modal(event){
 	  event.preventDefault();
-      $.fn.fullpage.setAllowScrolling(true);
-      $('.modal_bg').fadeOut();
+	  if(typeof $.fn.fullpage.setAllowScrolling !== 'undefined'){	  
+        $.fn.fullpage.setAllowScrolling(true);
+      }
+	  $('.modal_bg').fadeOut();
       $('.modal_content').text("");
       isa.modal = false;
       $('.modal_win .modal_content #controls .prev_btn').off('click', prev_slide);
@@ -60,13 +64,15 @@ $(document).ready(function(){
   
   function open_isi(){
     if (isi_open){
-
-      $.fn.fullpage.setAllowScrolling(true);
+	  if(typeof $.fn.fullpage.setAllowScrolling !== 'undefined'){
+        $.fn.fullpage.setAllowScrolling(true);
+	  }
       isi_open = false;
       
     }else{
-    
-      $.fn.fullpage.setAllowScrolling(false);
+  	  if(typeof $.fn.fullpage.setAllowScrolling !== 'undefined'){
+        $.fn.fullpage.setAllowScrolling(false);
+	  }
       isi_open = true;
           
     }

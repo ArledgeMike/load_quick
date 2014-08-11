@@ -12,15 +12,14 @@
   top:90px;
   z-index: 999;
 }
-#container #efficacy_four .headline{
-  background:url(../images/2.3_headline.svg) no-repeat;
-}
-
 #container .section{
   position:relative;
   height:100%;
   display:block;
   opacity:0;
+}
+#container .sub_headline sup{
+	font-size:48%;
 }
 #container #efficacy_one.section{
   opacity:1
@@ -31,92 +30,88 @@
   left:94px;
   width: 682px;
 }
-
-#container #efficacy_five.section .sub_headline{
-  line-height:16px;
-  
-}
-#container #efficacy_six.section, #container #efficacy_three.section{
-//background: url(../images/2.5_background.jpg) no-repeat;
-//background-size:contain;
+#container p.graph_footer{
+  position: relative;
+  left: 94px;
+  top: 81px;
+  width: 758px;
 }
 #container .section .graph{
   width:837px;
   position: relative;
-  left:160px;
-  top: 85px;
+  left: 200px;
+  top: 55px;
 }
+
+
+/**********************************/
+/**********************************/
+/* 2.0 SLIDE */
+
 #container #efficacy_one .graph{
   background: url(../images/2.0_graph_body.svg) no-repeat;
   width: 550px;
   height: 380px;
-
+  top: 80px;
 }
 #container #efficacy_one .graph .opt_lines{
-    width: 467px;
-    height: 211px;
-    position: absolute;
-    left: 55px;
-    z-index: 9;
-    top: 10px;
+  width: 467px;
+  height: 211px;
+  position: absolute;
+  left: 55px;
+  z-index: 9;
+  top: 10px;
 }
 #container #efficacy_one .graph .opt_lines svg{
-height:100%;
-width:100%;
+  height:100%;
+  width:100%;
 }
-#container #efficacy_one .graph .opt_lines .line{
-  stroke-dasharray: 681;
-  //stroke-dashoffset: 6290;
-    animation-fill-mode:forwards;
-  -moz-animation-fill-mode: forwards;
-  -webkit-animation-fill-mode: forwards;
-   animation: opti_dash 3s linear;
-  -moz-animation: opti_dash 3s linear;
-  -webkit-animation: opti_dash 3s linear;
+#container #efficacy_one.section.table .graph .opt_lines .line{
+  stroke-dasharray: 681;  
+  opacity:0;
+}
+#container #efficacy_one.section.table.active .graph .opt_lines .line{
+  opacity:1;
+  stroke-dashoffset: 681;
+  -webkit-animation: opti_dash 1.75s linear forwards;
+  -webkit-animation-delay: 1.5s;
 }
 #container #efficacy_one .graph .gen_lines{
-    width: 465px;
-    height: 211px;
-    position: absolute;
-    left: 54px;
-    z-index: 9;
-    top: 10px;
+  width: 465px;
+  height: 211px;
+  position: absolute;
+  left: 54px;
+  z-index: 9; 
+  top: 10px;
 }
 #container #efficacy_one .graph .gen_lines svg{
-width:100%;
-height:100%
+  width:100%;
+  height:100%
 }
-#container #efficacy_one .graph .gen_lines .line{
+#container #efficacy_one.section.table .graph .gen_lines .line{
   stroke-dasharray: 672;
-//  stroke-dashoffset: 6290;
-   animation-fill-mode:forwards;
-  -moz-animation-fill-mode: forwards;
-  -webkit-animation-fill-mode: forwards;
-   animation: dash 3s linear;
-  -moz-animation: dash 3s linear;
-  -webkit-animation: dash 3s linear;
+  opacity:0;
 }
-#container #efficacy_one .graph .fill{
+#container #efficacy_one.section.table.active .graph .gen_lines .line{
+  opacity:1;
+  stroke-dashoffset: 672;
+  -webkit-animation: dash 1.75s linear forwards;	
+  -webkit-animation-delay: 1.5s;
+}
+#container #efficacy_one.section.table .graph .fill{
   background: url(../images/2_0_graph_fill.svg) no-repeat;
   width: 465px;
   height: 300px;
   position: absolute;
   left: 55px;
   opacity:0;
-
   top: 11px;
-  animation-fill-mode:forwards;
-  -moz-animation-fill-mode: forwards;
-  -webkit-animation-fill-mode: forwards;
-
-   animation: fill 0.4s linear forwards;
-  -moz-animation: fill 0.4s linear forwards;
+}
+#container #efficacy_one.section.table.active .graph .fill{
   -webkit-animation: fill 0.4s linear forwards;
-      -webkit-animation-delay: 3s; /* Chrome, Safari, Opera */
-   animation-delay: 3s;
-
+  -webkit-animation-delay: 2.9s;
 }  
-#container #efficacy_one .graph .numbers{
+#container #efficacy_one.section.table .graph .numbers{
   background: url(../images/2_0_graph_numbers.svg) no-repeat;
   width: 465px;
   height: 300px;
@@ -124,62 +119,73 @@ height:100%
   top: -46px;
   left: 106px;
   opacity:0;
-    animation-fill-mode:forwards;
-  -moz-animation-fill-mode: forwards;
-  -webkit-animation-fill-mode: forwards;
-
-   animation: fill 0.6s linear forwards;
-  -moz-animation: fill 0.6s linear forwards;
-  -webkit-animation: fill 0.6s linear forwards;
-      -webkit-animation-delay: 4s; /* Chrome, Safari, Opera */
-   animation-delay: 4s;
 }
+#container #efficacy_one.section.table.active .graph .numbers{
+  -webkit-animation: fill 0.6s linear forwards;
+  -webkit-animation-delay: 3.7s; /* Chrome, Safari, Opera */
+}
+
+@-webkit-keyframes dash {
+   0%{
+    stroke-dashoffset: 672;
+  }
+  100% {
+    stroke-dashoffset: 1340;
+  }
+}
+@-webkit-keyframes opti_dash {
+   0%{
+    stroke-dashoffset: 681;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes fill {
+   0%{
+   opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/**********************************/
+/**********************************/
+/* 2.1 SLIDE STYLES AND ANIMATION */
 
 #container #efficacy_two .graph{
   background: url(../images/2_1_graph_body.svg) no-repeat;
-
   width:504px;
   height:326px;
-
+  top: 60px;
 }
-#container #efficacy_two .graph .opt_bar{
+#container #efficacy_two.section.table .graph .opt_bar{
   background: url(../images/2_1_graph_opti_bar.svg) no-repeat;
   width:71px;
-  //height:234px;
   position: absolute;
   left: 106px;
   bottom: 42px;
-    background-size: 71px 234px;
-     //animation-fill-mode:forwards;
-  //-moz-animation-fill-mode: forwards;
-  -webkit-animation-fill-mode: forwards;
-
-   //animation: grow 1s linear forwards;
-  //-moz-animation: grow 1s linear forwards;
-  -webkit-animation: opt_grow 1s linear forwards;
-       -webkit-animation-delay: 4s; /* Chrome, Safari, Opera */
-  // animation-delay: 4s;
-
+  background-size: 71px 234px;
 }
-#container #efficacy_two .graph .gen_bar{
+#container #efficacy_two.section.table.active .graph .opt_bar{
+  -webkit-animation: opt_grow 1s linear forwards;
+  -webkit-animation-delay: 1.75s;
+}
+#container #efficacy_two.section.table .graph .gen_bar{
   background: url(../images/2_1_graph_gen_bar.svg) no-repeat;
   width:71px;
-  //height:153px;
   position: absolute;
   left: 246px;
   bottom: 42px;
-  //animation-fill-mode:forwards;
-  //-moz-animation-fill-mode: forwards;
-  -webkit-animation-fill-mode: forwards;
-
-   //animation: grow 1s linear forwards;
-  //-moz-animation: grow 1s linear forwards;
-  -webkit-animation: gen_grow 1s linear forwards;
-       -webkit-animation-delay: 4s; /* Chrome, Safari, Opera */
-   //animation-delay: 4s;
   background-size: 71px 153px;
 }
-#container #efficacy_two .graph .opti_num{
+#container #efficacy_two.section.table.active .graph .gen_bar{
+  -webkit-animation: gen_grow 1s linear forwards;
+  -webkit-animation-delay: 1.75s; 
+}
+#container #efficacy_two.section.table .graph .opti_num{
   background: url(../images/2_1_graph_opti_numbers.svg) no-repeat;
   width:74px;
   height:20px;
@@ -187,21 +193,247 @@ height:100%
   left: 110px;
   top: 22px;
   opacity:0;
-       -webkit-animation: show_num .5s linear forwards;
-            -webkit-animation-delay: 5s; /* Chrome, Safari, Opera */
-
 }
-#container #efficacy_two .graph .gen_num{
+#container #efficacy_two.section.table.active .graph .opti_num{
+  -webkit-animation: show_num .5s linear forwards;
+  -webkit-animation-delay: 2.25s;
+}
+#container #efficacy_two.section.table .graph .gen_num{
   background: url(../images/2_1_graph_gen_numbers.svg) no-repeat;
   width:74px;
   height:20px;
-opacity:0;
+  opacity:0;
   position: absolute;
   left: 245px;
   top: 105px;
-       -webkit-animation: show_num .5s linear forwards;
-              -webkit-animation-delay: 5s; /* Chrome, Safari, Opera */
+}
+#container #efficacy_two.section.table.active .graph .gen_num{
+  -webkit-animation: show_num .5s linear forwards;
+  -webkit-animation-delay: 2.25s;
+}
+#container #efficacy_two.section.table .graph .numbers{
+  background: url(../images/2_1_graph_numbers.svg) no-repeat;
+  width:314px;
+  height:102px;
+  position: absolute;
+  left: 183px;
+  top: -3px;
+  opacity:0;
+}
+ #container #efficacy_two.section.table.active .graph .numbers{
+  -webkit-animation: show_data .5s linear forwards;
+  -webkit-animation-delay: 2.9s;
+}
+#container #efficacy_two p.graph_footer{
+  /* top: 60px; */
+}
+@-webkit-keyframes show_num {
+   0%{
+    opacity: 0;
+  }
+  100% {
+   opacity: 1;
+  }
+}
+@-webkit-keyframes show_data {
+  0%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes opt_grow {
+   0%{
+    height: 0px;
+  }
+  100% {
+   height: 234px;
+  }
+}
+@-webkit-keyframes gen_grow {
+   0%{
+    height: 0px;
+  }
+  100% {
+   height: 153px;
+  }
+}
 
+
+/**********************************/
+/**********************************/
+/* 2.2 THERE ARE NO ANIMATIONS HERE */
+
+#container #efficacy_three .graph{
+  background: url(../images/2.2_graph.svg) no-repeat;
+  height:353px;
+  top: 61px;
+  left: 150px;
+}
+
+
+/**********************************/
+/**********************************/
+/*2.3 GRAPH STYLES AND ANIMATIONS */
+
+#container #efficacy_four .graph{
+  background:url(../images/2_3_graph_body.svg) no-repeat;
+  height:375px;
+}
+
+#container #efficacy_four .graph .opt_lines{
+  width: 467px;
+  height: 231px;
+  position: absolute;
+  left: 52px;
+  z-index: 9;
+  top: 30px;
+}
+#container #efficacy_four .graph .opt_lines svg{
+  height:100%;
+  width:100%;
+}
+#container #efficacy_four.section.table  .graph .opt_lines .line{
+  opacity:0;
+}
+#container #efficacy_four.section.table.active .graph .opt_lines .line{
+  opacity:1;
+  stroke-dasharray: 696;	
+  -webkit-animation: opti_dash_two 3s linear forwards;
+  -webkit-animation-delay: 1.5s;
+  
+}
+#container #efficacy_four.section.table .graph .gen_lines{
+  width: 465px;
+  height: 238px;
+  position: absolute;
+  left: 55px;
+  z-index: 9;
+  top: 30px;
+}
+#container #efficacy_four .graph .gen_lines svg{
+  width:100%;
+  height:100%
+}
+#container #efficacy_four.section.table .graph .gen_lines .line{
+  opacity:0;
+}
+#container #efficacy_four.section.table.active .graph .gen_lines .line{
+  opacity:1;
+  stroke-dasharray:701;
+  -webkit-animation: gen_dash_two 3s linear forwards;
+  -webkit-animation-delay: 1.5s;
+  
+}
+#container #efficacy_four.section.table .graph .fill{
+  background: url(../images/2_3_graph_fill.svg) no-repeat;
+  width: 465px;
+  height: 238px;
+  position: absolute;
+  left: 55px;
+  opacity:0;
+  top: 30px;
+}
+#container #efficacy_four.section.table.active .graph .fill{
+  -webkit-animation: fill 0.4s linear forwards;
+  -webkit-animation-delay: 4.2s;
+}  
+#container #efficacy_four.section.table .graph .numbers{
+  background: url(../images/2_3_graph_numbers.svg) no-repeat;
+  width: 222px;
+  height: 246px;
+  position: absolute;
+  top: 18px;
+  left: 72px;
+  opacity:0;
+  z-index:99;
+}
+#container #efficacy_four.section.table.active .graph .numbers{
+  -webkit-animation: fill 0.6s linear forwards;
+  -webkit-animation-delay: 4.8s; /* Chrome, Safari, Opera */
+}
+#container #efficacy_four p.graph_footer{
+  /* top:620px; */
+}
+@-webkit-keyframes gen_dash_two {
+   0%{
+    stroke-dashoffset: 672;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes opti_dash_two {
+   0%{
+    stroke-dashoffset: 697;
+  }
+  100% {
+    stroke-dashoffset: 1392;
+  }
+}
+
+/**********************************/
+/**********************************/
+/*2.4 GRAPH STYLES AND ANIMATIONS */
+
+#container #efficacy_five.section .sub_headline{
+  line-height:16px; 
+}
+#container #efficacy_five .graph{
+  background: url(../images/2_4_graph_body.svg)no-repeat;
+  height:326px;
+  width:504px;
+}
+#container #efficacy_five.section.table .graph .opt_bar{
+  background: url(../images/2_4_graph_opti_bar.svg) no-repeat;
+  width:71px;
+  position: absolute;
+  left: 106px;
+  bottom: 42px;
+  background-size: 71px 234px;
+}
+#container #efficacy_five.section.table.active .graph .opt_bar{
+  -webkit-animation: opt_grow 1s linear forwards;
+  -webkit-animation-delay: 1.9s; 
+}
+#container #efficacy_five.section.table .graph .gen_bar{
+  background: url(../images/2_4_graph_gen_bar.svg) no-repeat;
+  width:71px;
+  position: absolute;
+  left: 246px;
+  bottom: 42px;
+  height:0px;
+  background-size: 71px 98px;
+}
+#container #efficacy_five.section.table.active .graph .gen_bar{
+  -webkit-animation: second_gen_grow 1s linear forwards;
+  -webkit-animation-delay: 1.9s;
+}
+#container #efficacy_five.section.table .graph .opti_num{
+  background: url(../images/2_4_graph_opti_numbers.svg) no-repeat;
+  width:74px;
+  height:20px;
+  position: absolute;
+  left: 115px;
+  top: 22px;
+  opacity:0;
+}
+#container #efficacy_five.section.table.active .graph .opti_num{
+  -webkit-animation: show_num .5s linear forwards;
+  -webkit-animation-delay: 2.6s;
+}
+#container #efficacy_five.section.table .graph .gen_num{
+  background: url(../images/2_4_graph_gen_numbers.svg) no-repeat;
+  width:74px;
+  height:20px;
+  opacity:0;
+  position: absolute;
+  left: 255px;
+  top: 160px;
+}#container #efficacy_five.section.table.active .graph .gen_num{
+  -webkit-animation: show_num .5s linear forwards;
+  -webkit-animation-delay: 2.6s; /* Chrome, Safari, Opera */
 }
 @-webkit-keyframes show_num {
    0%{
@@ -215,214 +447,63 @@ opacity:0;
   }
 }
 
-#container #efficacy_two .graph .numbers{
- background: url(../images/2_1_graph_numbers.svg) no-repeat;
-       	width:314px;
-  height:102px;
- position: absolute;
- left: 183px;
- top: -3px;
- opacity:0;
-     -webkit-animation: show_data .5s linear forwards;
-     -webkit-animation-delay: 6s; /* Chrome, Safari, Opera */
+#container #efficacy_five.section.table .graph .numbers{
+  background: url(../images/2_4_graph_numbers.svg) no-repeat;
+  width:314px;
+  height:186px;
+  position: absolute;
+  left: 200px;
+  top: -4px;
+  opacity:0;
+}
+#container #efficacy_five.section.table.active .graph .numbers{
+  -webkit-animation: show_data .5s linear forwards;
+  -webkit-animation-delay: 3s; /* Chrome, Safari, Opera */
+}
+#container #efficacy_five p.graph_footer{
+  top:631px;
 }
 @-webkit-keyframes show_data {
    0%{
     opacity: 0;
   }
-  50%{
-
-  }
   100% {
    opacity: 1;
   }
 }
-
 @-webkit-keyframes opt_grow {
    0%{
     height: 0px;
-  }
-  50%{
-
   }
   100% {
    height: 234px;
   }
 }
-@-webkit-keyframes gen_grow {
+@-webkit-keyframes second_gen_grow {
    0%{
     height: 0px;
   }
-  50%{
-
-  }
   100% {
-   height: 153px;
+   height: 98px;
   }
 }
 
-#container #efficacy_three .graph{
-  background: url(../images/2.2_graph.svg) no-repeat;
-  height:353px;
-}
-#container #efficacy_four .graph{
-  background:url(../images/2.3_graph.svg) no-repeat;
-  height:375px;
-}
-#container #efficacy_five .graph{
-  background: url(../images/2.4_graph.svg)no-repeat;
-  height:395px;
-}
+
+/**********************************/
+/**********************************/
+/*2.5 THERE ARE NO ANIMATIONS HERE */
+
 #container #efficacy_six .graph{
   background: url(../images/2.5_graph.svg)no-repeat;
   height:370px;
+  top: 67px;
+  left: 150px;
 }
 #container #efficacy_three p.body{
   position:absolute;
   top:600px;
   width:75%;
 }
-#container p.graph_footer{
-  position: relative;
-  left: 94px;
-  top: 81px;
-  width: 758px;
-  /* font-size:13px; */
-}
-#container #efficacy_two p.graph_footer{
-  top:600px;
-}
-#container #efficacy_four p.graph_footer{
-  top:620px;
-}
-#container #efficacy_five p.graph_footer{
-  top:631px;
-}  
 #container #efficacy_six p.graph_footer{
   top:615px;
 }
-
-@keyframes dash {
-   0%{
-    stroke-dashoffset: 672;
-  }
-  50%{
-
-  }
-  100% {
-    stroke-dashoffset: 1244;
-  }
-}
-
-@-webkit-keyframes dash {
-   0%{
-    stroke-dashoffset: 672;
-  }
-  50%{
-
-  }
-  100% {
-    stroke-dashoffset: 1244;
-  }
-}
-@-moz-keyframes dash {
-   0%{
-    stroke-dashoffset: 672;
-  }
-  50%{
-
-  }
-  100% {
-    stroke-dashoffset: 1244;
-  }
-}
-
-
-@keyframes opti_dash {
-   0%{
-    stroke-dashoffset: 681;
-  }
-  50%{
-
-  }
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
-
-@-webkit-keyframes opti_dash {
-   0%{
-    stroke-dashoffset: 681;
-  }
-  50%{
-
-  }
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
-@-moz-keyframes opti_dash {
-   0%{
-    stroke-dashoffset: 681;
-  }
-  50%{
-
-  }
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
-
-
-@keyframes fill {
-   0%{
-   opacity: 0;
-  }
-  50%{
-
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fill {
-   0%{
-   opacity: 0;
-  }
-  50%{
-
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-moz-keyframes fill {
-   0%{
-   opacity: 0;
-  }
-  50%{
-
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

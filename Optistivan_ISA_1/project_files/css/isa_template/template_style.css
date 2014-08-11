@@ -233,7 +233,17 @@ footer ul li a.icon:before{
   position:relative;
   top: 0px;
 }
-
+/* Deep content indicator */
+#deep_page_indicator{
+	width: 25px;
+	height: 21px;
+	position:absolute;
+	left: 20px;
+	bottom: 68px;
+	background: url(../../images/isa_template/deep_page_indicators_2dots.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
 /*ICON BUTTONS */
 .icon:before{
   width: 19px;

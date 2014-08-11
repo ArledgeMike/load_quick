@@ -1,11 +1,8 @@
 var isa = {
-  modal: false,
   acc_open: false,
   
   init: function(){
-    console.log("isa called");
-    $('footer ul li a').on("click", isa.open_modal);
-    $('.modal_win').on("click", isa.close_modal);
+
   },
   
   configure_click: function(event){
@@ -45,19 +42,6 @@ var isa = {
     $('.section ').eq(index -1).animate({
       opacity:0      
     },1000);
-  },
-  
-  open_modal: function(){
-    isa.modal = true;  	  
-    $('.modal_bg').fadeIn();
-  },
-
-  close_modal: function(event){
-    if(isa.modal){
-      $('.modal_bg').fadeOut();
-      isa.modal = false;
-      event.stopPropagation();
-    }
   },
   accordian: function(){
     $('.acc_btn').on('click' , function(){

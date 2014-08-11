@@ -25,7 +25,7 @@
 #container .section .graph{
   width: 820px;
   position:absolute;
-  left: 75px;
+  left: 120px;
   top: 255px;
   height: 350px;
   overflow:hidden;
@@ -35,7 +35,7 @@ width:764px;
 height:34px;
 background: url(../images/4.0_graph_header.svg) no-repeat;
 float:right;
-z-index:9999;
+z-index: 99;
 background-color:white;
 position:relative;
 }

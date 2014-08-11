@@ -23,7 +23,7 @@
           <li><a class="icon" id="patient_profile" href="veeva:gotoSlide(Optistivan_ISA_5.zip)"onclick = "void(0)"></a></li>
           <li><a class="icon" id="dosing" href="veeva:gotoSlide(Optistivan_ISA_6.zip)"onclick = "void(0)"></a></li>
           <li><a class="icon" id="cost" href="veeva:gotoSlide(Optistivan_ISA_7.zip)"onclick = "void(0)"></a></li>
-          <li><a class="icon" id="summary" href="veeva:gotoSlide(Optistivan_ISA_8.zip)"onclick = "void(0)"></a></li>
+          <li><a class="icon active" id="summary" href="veeva:gotoSlide(Optistivan_ISA_8.zip)"onclick = "void(0)"></a></li>
         </ul>
       </nav>
       <div id="link_controls">
@@ -124,12 +124,20 @@
     </div>
     <footer>
       <ul>
-        <li class="first_item"><a class="icon"onclick = "void(0)" id="opt_in" href="#">Opt-in</a></li>
-        <li><a class="icon" id="references"onclick = "void(0)" href="#">References</a></li>
+        <li class="first_item">
+	      <a class="icon" onclick = "void(0)" id="opt_in" rel="project_files/html/isa_template/optin.html" href="#">Opt-in</a>
+	    </li>
+        <li>
+	      <a class="icon" id="references"onclick = "void(0)" rel="project_files/html/isa_template/references.html" href="#">References</a>
+	    </li>
       </ul>
       <ul class="right_menu">
-        <li class="first_item"><a class="icon"onclick = "void(0)" id="medication_guide" rel="project_files/html/medguide.html" href="#">Medication Guide</a></li>
-        <li><a class="icon" id="prescription_info"onclick = "void(0)" href="#">Prescription Information</a></li>
+        <li class="first_item">
+		  <a class="icon"onclick = "void(0)" id="medication_guide" rel="project_files/html/isa_template/medguide.html" href="#">Medication Guide</a>
+	    </li>
+        <li>
+		  <a class="icon" id="prescription_info"onclick = "void(0)" rel="project_files/html/isa_template/pi.html" href="#">Prescription Information</a>
+	    </li>
       </ul>
     </footer>  
     <div class="modal_bg">
