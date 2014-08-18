@@ -3,6 +3,16 @@
   height:100%;
   display:block;
 }
+#deep_page_indicator {
+width: 25px;
+height: 21px;
+position: absolute;
+left: 20px;
+bottom: 68px;
+background: url(../images/isa_template/deep_page_indicators_2dots.svg);
+background-repeat: no-repeat;
+background-size: contain;
+}
 #container .section .headline{
   background: url(../images/6.0_headline.svg) no-repeat;	
   width:745px;
@@ -25,7 +35,7 @@
   width: 750px;
   height: 392px;
   position:absolute;
-  left: 90px;
+  left: 98px;
   top: 272px;
 }
 #container .section#infusion .graph .bag{
@@ -83,8 +93,8 @@ left: 50px;
 }
 #container p.body{
   position:absolute;
-  top: 600px;
-  left:90px;
+  top: 605px;
+  left: 95px;
   width: 575px;
 }
 #container p.fair_use{
@@ -115,12 +125,5 @@ left: 50px;
   background-size:contain;
   left:570px;
 }
-
-
-
-
-
-
-
 
 

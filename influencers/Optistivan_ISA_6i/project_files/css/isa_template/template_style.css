@@ -1,0 +1,422 @@
+/*TEMPLATE TYPE GLOBAL ELEMENTS */
+h2{
+  font-family: Arial;
+  font-weight:bold;
+  font-size:20px;
+  line-height:22px;
+  color:#4d4d4f;
+}
+p, li{
+  font-family: Arial; 
+  font-size:16px;
+  line-height:22px;
+  color:#4d4d4f;
+}
+p.footnote{
+  font-family:Arial;
+  font-size:13px;
+  line-height:15px;
+  color:#4d4d4f;	
+}
+
+/* TEMPLATE GLOBAL ELEMENTS */
+*{
+  padding:0px;
+  margin:0px;
+}
+body, html{
+  overflow:hidden;
+  width:100%;
+  height:100%;
+}
+body{
+  font-family:sans-serif;	
+  color: #6d6e70;
+}
+nav{
+  width:450px;
+  height: 30px;
+  position:fixed;
+  top:5px;
+  left:50%;
+  margin-left:-225px;
+  z-index:10; 
+}
+nav ul{
+  width:100%;
+  height:100%;
+}
+nav ul li{
+  float:left;
+  display:inline-block;
+  margin-left: 42px;
+}
+nav ul li.first_item{
+  margin-left:0px;
+}
+nav ul li a.icon.active{
+  opacity:1;
+}
+nav ul li a.icon{
+  opacity:.5;
+  width: 28px;
+  height: 28px;
+  background-size: contain !important;
+}
+nav ul li a{
+  display:block;
+  text-decoration:none;
+}
+#link_controls{
+  width:125px;
+  position:fixed;
+  top: 325px;
+  left: -2px;
+  z-index: 999;
+  display:none;
+}
+#link_controls ul{
+  width:100%;
+  height:100%;
+}
+  
+#link_controls ul li.first_item{
+  margin-bottom:15px;
+}
+#link_controls ul li a{
+  background:#60a296;
+  text-decoration:none;
+  text-indent: 15px;
+  color: white;
+  display: block;
+  width: 112px;
+  padding: 10px 0px;
+  position: relative;
+}
+#link_controls ul li a.active{
+ background:white;
+ border: thin solid #60a296;
+ color: #60a296;
+ width: 125px;
+ text-indent: 45px;
+}
+#link_controls ul li a.active:before{
+	content:"slug";
+width: 0;
+height: 0;
+border-style: solid;
+	border-width: 9px 0 9px 11px;
+	border-color: transparent transparent transparent #60a296;
+z-index: 999;
+overflow:hidden;
+	position: absolute;
+	left: 24px;
+	top: 14px;
+}
+#isi{
+  width:100%;
+  height: 100%; 
+  position:fixed;
+  bottom: 0px;
+  top: 100%;
+  left:0px;
+  z-index:999;
+  padding-bottom: 320px;
+  
+}
+#isi #header{
+  width:706px;
+  border-top: thin solid #f3f1e9;
+  height: 40px;
+  float: right;
+  border-left: thin solid #f3f1e9;
+  background: white;
+  border-radius: 30px 0 0 0;
+  position:relative;
+  cursor:pointer; 
+
+}
+#isi #header:before{
+  content:"slug";
+  width:50px;
+  height: 39px;
+  background: url(../../images/isa_template/isi_swoop.png) no-repeat;
+  overflow:hidden;
+  text-indent:999px;
+  display: inline-block;
+  position: absolute;
+  left: -31px;
+  top: 1px;
+}
+#isi #header p{
+  line-height: 41px;	
+  text-indent: 32px;
+  font-weight: bold;
+  font-size: 13px;
+}
+#isi .isi_container{
+border-top: thin solid #f3f1e9;
+
+	float: left;
+width: 100%;
+height: 100%;
+background: white;
+padding-top: 13px;
+}
+#isi #body{
+  overflow-y:scroll;
+  float: left;
+  padding: 21px 25px 800px 25px;
+  height: 72%;
+  background: white;
+  
+}
+#isi #body #black_box{
+  border:thin black solid;
+  padding:25px;
+  margin-bottom:20px;
+}
+#isi #body #black_box h3{
+  margin-bottom:15px;
+}
+#isi #body #black_box p{
+  margin-bottom:8px;
+}
+#isi #body section{
+  margin-bottom:18px
+}
+#isi #body section p{
+  margin-bottom: 8px
+}
+#isi #body section ul{
+  padding-left:18px
+}
+footer{
+  width:100%;
+  height:50px;
+  position:fixed;
+  bottom:0px;
+  left:0px;
+  background: #f3f1e9;
+  z-index:9999;
+}
+footer ul{
+  width: 350px;
+  height: 100%;
+  float:left;
+  padding-top: 12px;
+  padding-left: 96px;
+}
+footer ul.right_menu{
+  float:right;
+  text-align: right;
+  padding-right: 31px;
+  position: relative;
+  width: 427px;
+}
+footer ul li{
+  display: inline-block;
+}
+footer ul li.first_item{
+  margin-right: 24px;
+}
+footer ul li a{
+  font-weight:bold;
+  text-decoration:none;
+  color: #6d6e70;
+  position:relative;
+  top: 0px;
+  line-height:29px;
+  font-size: 13px;
+}
+footer ul li a.icon:before{
+  position:relative;
+  top: 0px;
+}
+/* Deep content indicator */
+#deep_page_indicator{
+	width: 25px;
+	height: 21px;
+	position:absolute;
+	left: 20px;
+	bottom: 68px;
+	background: url(../../images/isa_template/deep_page_indicators_2dots.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	z-index:8;
+}
+/*ICON BUTTONS */
+.icon:before{
+  width: 19px;
+  height: 19px;
+  background-size: contain !important;
+  display: inline-block;
+}
+#efficacy.icon{
+  background: url(../../images/isa_template/icon_efficacy_active.svg) no-repeat;
+  background-position-y: 9px;
+}
+#isi_btn.icon{
+  background: url(../../images/isa_template/icon_isi_expand.svg) no-repeat;
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  background-size: contain;
+  position: absolute;
+  top: 6px;
+  right: 28px;
+}
+#isi_btn.icon.open{
+  background:url(../../images/isa_template/icon_isi_collapse.svg) no-repeat;
+  background-size: contain;
+}
+#moa.icon{
+  background: url(../../images/isa_template/icon_moa_active.svg) no-repeat;
+  background-position-y: 7px;
+}
+#safety.icon{
+  background: url(../../images/isa_template/icon_safety_active.svg) no-repeat;
+}
+#patient_profile.icon{
+  background: url(../../images/isa_template/icon_patient_active.svg) no-repeat;
+  background-position-y: 2px;
+}
+#dosing.icon{
+  background: url(../../images/isa_template/icon_dosing_active.svg) no-repeat;
+}
+#cost.icon{
+  background: url(../../images/isa_template/icon_cost_active.svg) no-repeat;
+  background-position-y: 6px;
+}
+#summary.icon{
+  background: url(../../images/isa_template/icon_summary_active.svg) no-repeat;
+  background-position-y: 4px;
+}
+#opt_in.icon:before{
+  content:"/slug";
+  background: url(../../images/isa_template/icon_opt_in.svg) no-repeat;
+  text-indent:999px;
+  overflow:hidden;
+  top: 4px;
+}
+#references.icon:before{
+  content:"/slug";
+  background: url(../../images/isa_template/icon_references.svg) no-repeat;
+  text-indent:999px;
+  overflow:hidden;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  top: 6px;
+}
+#medication_guide.icon:before{
+  content:"/slug";
+  background: url(../../images/isa_template/icon_medication_guide.svg) no-repeat;
+  text-indent:999px;
+  overflow:hidden;
+  top: 4px;
+}
+#prescription_info.icon:before{
+  content:"/slug";
+  background: url(../../images/isa_template/icon_prescribing_info.svg) no-repeat;
+  text-indent:999px;
+  overflow:hidden;
+  top: 4px;
+}
+/*MODALS */
+.modal_bg{
+  width:100%;
+  height:100%;
+  background: rgba(0,0,0,.4);
+  position:fixed;
+  top:0px;
+  left:0px;
+  display:none;
+  z-index:99999;
+}
+.modal_win{
+	width: 873px;
+	height: 570px;
+	background:white;
+	position:absolute;
+	left:50%;
+	top: 40%;
+	margin-top: -273px;
+	margin-left: -425px;
+}
+.modal_win .exit_modal{
+  width:35px;
+  height:35px;
+  position:absolute;
+  top: 30px;
+  right:30px;
+  background: url(../../images/isa_template/close_icon.svg) no-repeat;
+  cursor:pointer;
+  background-size: contain;
+}
+.modal_win .modal_content{
+	width:100%;
+	height:100%;
+	overflow: hidden;
+}
+.modal_win .modal_content ul{
+	list-style-type:none;
+	margin-left:0px;
+	padding-left:0px;
+	width:100%;
+	height:100%;
+
+}
+.modal_win .modal_content li{
+  width:100%;
+  height:100%;
+  float:left;
+}
+.modal_win .modal_content li img{
+	width:100%;
+	height:100%;
+}
+.modal_win .modal_content #controls{
+position:absolute;
+left: 808px;
+top: 505px;
+width: 38px;
+}
+.modal_win .modal_content #controls .prev_btn{
+width: 50px;
+height: 50px;
+background: url(../../images/isa_template/prev_btn.svg) no-repeat;
+cursor:pointer;
+background-size: contain;
+margin-bottom: 15px;
+}
+.modal_win .modal_content #controls .next_btn{
+width: 35PX;
+height: 35PX;
+background: url(../../images/isa_template/next_btn.svg) no-repeat;
+cursor:pointer;
+float: left;
+background-size: contain;
+}
+.modal_win .modal_content ul li{
+display:none;
+}
+.modal_win .modal_content ul li.active{
+	display:block;
+}
+
+
+/*Animations*/
+.start_isi{
+  margin-top:-92px;
+  -moz-transition: margin-top 1s ease;
+  -webkit-transition: margin-top 1s ease;
+  -o-transition: margin-top 1s ease;
+  transition: margin-top 1s ease;
+}
+.start_anim{
+	margin-top:-695px;
+}
+
+
+

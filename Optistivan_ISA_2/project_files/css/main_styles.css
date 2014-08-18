@@ -12,6 +12,17 @@
   top:90px;
   z-index: 999;
 }
+
+#deep_page_indicator {
+width: 25px;
+height: 21px;
+position: absolute;
+left: 20px;
+bottom: 68px;
+background: url(../images/isa_template/deep_page_indicators_3dots.svg);
+background-repeat: no-repeat;
+background-size: contain;
+}
 #container .section{
   position:relative;
   height:100%;
@@ -19,7 +30,7 @@
   opacity:0;
 }
 #container .sub_headline sup{
-	font-size:48%;
+	font-size: 55%;
 }
 #container #efficacy_one.section{
   opacity:1
@@ -225,7 +236,7 @@
   -webkit-animation-delay: 2.9s;
 }
 #container #efficacy_two p.graph_footer{
-  /* top: 60px; */
+  top: 108px;
 }
 @-webkit-keyframes show_num {
    0%{
@@ -268,8 +279,11 @@
 #container #efficacy_three .graph{
   background: url(../images/2.2_graph.svg) no-repeat;
   height:353px;
-  top: 61px;
+  top: 30px;
   left: 150px;
+}
+#container #efficacy_three p.graph_footer{
+  top:93px;
 }
 
 
@@ -299,7 +313,8 @@
 }
 #container #efficacy_four.section.table.active .graph .opt_lines .line{
   opacity:1;
-  stroke-dasharray: 696;	
+  stroke-dasharray: 696;
+   stroke-dashoffset: 701; 
   -webkit-animation: opti_dash_two 3s linear forwards;
   -webkit-animation-delay: 1.5s;
   
@@ -322,7 +337,8 @@
 #container #efficacy_four.section.table.active .graph .gen_lines .line{
   opacity:1;
   stroke-dasharray:701;
-  -webkit-animation: gen_dash_two 3s linear forwards;
+  stroke-dashoffset: 701;
+   -webkit-animation: gen_dash_two 3s linear forwards; 
   -webkit-animation-delay: 1.5s;
   
 }
@@ -350,8 +366,8 @@
   z-index:99;
 }
 #container #efficacy_four.section.table.active .graph .numbers{
-  -webkit-animation: fill 0.6s linear forwards;
-  -webkit-animation-delay: 4.8s; /* Chrome, Safari, Opera */
+   -webkit-animation: fill 0.6s linear forwards; 
+   -webkit-animation-delay: 4.8s; 
 }
 #container #efficacy_four p.graph_footer{
   /* top:620px; */
@@ -461,7 +477,7 @@
   -webkit-animation-delay: 3s; /* Chrome, Safari, Opera */
 }
 #container #efficacy_five p.graph_footer{
-  top:631px;
+  top: 108px;
 }
 @-webkit-keyframes show_data {
    0%{
@@ -496,7 +512,7 @@
 #container #efficacy_six .graph{
   background: url(../images/2.5_graph.svg)no-repeat;
   height:370px;
-  top: 67px;
+  top: 30px;
   left: 150px;
 }
 #container #efficacy_three p.body{
@@ -505,5 +521,7 @@
   width:75%;
 }
 #container #efficacy_six p.graph_footer{
-  top:615px;
+  top: 87px;
 }
+
+

@@ -20,7 +20,7 @@
 #content .section .sub_headline{
   position:absolute;
   top:200px;
-  left:94px;
+  left: 95px;
   width:584px;
   font-size: 18px;
   line-height: 21px;}
@@ -30,7 +30,7 @@
   height:340px;
   background-size: contain;
   position:absolute;
-  left: 92px;
+  left: 95px;
   top: 263px;
 }
 #content .section .graph ul{
@@ -137,7 +137,7 @@ z-index:999999999;
 }
 #content p.graph_footer{
   position:absolute;
-  left:90px;
+  left: 95px;
   top: 618px;
   width:700px;
   font-size:13px;
@@ -185,14 +185,3 @@ left:0px;
 
 background-size: contain;
 }
-
-
-
-
-
-
-
-
-
-
-

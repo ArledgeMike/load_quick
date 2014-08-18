@@ -1,0 +1,128 @@
+#container{
+  width:100%;
+  height:100%;
+  display:block;
+}
+#deep_page_indicator {
+width: 25px;
+height: 21px;
+position: absolute;
+left: 20px;
+bottom: 68px;
+background: url(../images/isa_template/deep_page_indicators_2dots.svg);
+background-repeat: no-repeat;
+background-size: contain;
+}
+#container .section .headline{
+  background: url(../images/6.0_headline.svg) no-repeat;	
+  width:745px;
+  height:105px;
+  position:absolute;
+  left:94px;
+  top:90px;
+}
+#container .section{
+  background-size:contain;
+  width:100%;
+  height:100%;
+}
+#container .section .sub_headline{
+  position:absolute;
+  top:200px;
+  left:94px;
+}
+  #container .section .graph{
+  width: 750px;
+  height: 392px;
+  position:absolute;
+  left: 98px;
+  top: 272px;
+}
+#container .section#infusion .graph .bag{
+width: 362px;
+height:300px;
+position:relative;
+float:left;
+}
+#container .section#infusion .graph .bag p{
+  position:absolute;
+  top: 105px;
+  
+  font-size: 45px;
+  color: #6c6d6f;
+  font-weight: bold;
+}
+#container .section#infusion .graph #opt.bag{
+background: url(../images/6.0_opt_bag.svg) no-repeat;
+}
+#container .section#infusion .graph #opt.bag .overlay, #container .section#infusion .graph #gen.bag .overlay {
+background: url(../images/6.0_bag_overlay.svg) no-repeat;
+height:236px;
+width:120px;
+position:absolute;
+
+left: 165px;
+top: 37px;
+}
+#container .section#infusion .graph .bag .liquid{
+width:120px;
+height:140px;
+position:absolute;
+bottom: 68px;
+left: 164px;
+overflow:hidden;
+}
+#container .section#infusion .graph #opt.liquid{
+ position: absolute;
+bottom: 155px;
+height: 144px;
+overflow: hidden;
+width: 121px;
+left: 165px;}
+#container .section#infusion .graph #gen.liquid{
+position: absolute;
+bottom: 155px;
+height: 144px;
+overflow: hidden;
+width: 121px;
+left: 575px;}
+
+#container .section#infusion .graph #gen.bag{
+background: url(../images/6.0_gen_bag.svg) no-repeat;
+left: 50px;
+}
+#container p.body{
+  position:absolute;
+  top: 605px;
+  left: 95px;
+  width: 575px;
+}
+#container p.fair_use{
+  position: absolute;
+  top: 657px;
+  left: 90px;
+  width: 980px;
+}
+#container p.graph_footer{
+  position:absolute;
+  left:90px;
+  top: 618px;
+  width:700px;
+}
+#container .section#dosing{
+  background:url(../images/6.1_background.jpg) no-repeat;
+  width:100%;
+  height:100%;
+  background-size:contain;
+}
+#container .section#dosing .headline{
+  background: url(../images/6.1_headline.svg) no-repeat;
+}
+#container .section#dosing .graph{
+  background: url(../images/6.1_graph.png) no-repeat;
+  width:420px;
+  height:401px;
+  background-size:contain;
+  left:570px;
+}
+
