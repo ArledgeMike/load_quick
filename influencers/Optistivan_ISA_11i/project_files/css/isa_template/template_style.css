@@ -18,7 +18,9 @@ p.footnote{
   line-height:15px;
   color:#4d4d4f;	
 }
-
+sup{
+	font-size:55%;
+}
 /* TEMPLATE GLOBAL ELEMENTS */
 *{
   padding:0px;
@@ -40,7 +42,7 @@ nav{
   top:5px;
   left:50%;
   margin-left:-225px;
-  z-index: 9999; 
+  z-index:10; 
 }
 nav ul{
   width:100%;
@@ -79,18 +81,13 @@ nav ul li a{
   width:100%;
   height:100%;
 }
-#link_controls ul li{
-  /* width:112px; */
-  /* height: 45px; */
   
-}
 #link_controls ul li.first_item{
   margin-bottom:15px;
 }
 #link_controls ul li a{
   background:#60a296;
   text-decoration:none;
-  /* line-height: 50px; */
   text-indent: 15px;
   color: white;
   display: block;
@@ -110,20 +107,17 @@ nav ul li a{
 width: 0;
 height: 0;
 border-style: solid;
-
 	border-width: 9px 0 9px 11px;
-
 	border-color: transparent transparent transparent #60a296;
 z-index: 999;
 overflow:hidden;
-
 	position: absolute;
 	left: 24px;
 	top: 14px;
 }
 #isi{
   width:100%;
-  /* height: 100%; */
+  height: 100%; 
   position:fixed;
   bottom: 0px;
   top: 100%;
@@ -141,7 +135,8 @@ overflow:hidden;
   background: white;
   border-radius: 30px 0 0 0;
   position:relative;
-  cursor:pointer;  
+  cursor:pointer; 
+
 }
 #isi #header:before{
   content:"slug";
@@ -157,18 +152,25 @@ overflow:hidden;
 }
 #isi #header p{
   line-height: 41px;	
-  text-indent: 56px;
+  text-indent: 32px;
   font-weight: bold;
   font-size: 13px;
+}
+#isi .isi_container{
+border-top: thin solid #f3f1e9;
+
+	float: left;
+width: 100%;
+height: 100%;
+background: white;
+padding-top: 13px;
 }
 #isi #body{
   overflow-y:scroll;
   float: left;
   padding: 21px 25px 800px 25px;
-  border-top: thin solid #f3f1e9;
-  height: 150%;
+  height: 72%;
   background: white;
-  /* margin-bottom: 200px; */
   
 }
 #isi #body #black_box{
@@ -201,18 +203,17 @@ footer{
   z-index:9999;
 }
 footer ul{
-  width: 391px;
+  width: 350px;
   height: 100%;
   float:left;
   padding-top: 12px;
-  padding-left: 50px;
+  padding-left: 96px;
 }
 footer ul.right_menu{
   float:right;
   text-align: right;
-  padding-right: 13px;
+  padding-right: 31px;
   position: relative;
-  /* left: -565px; */
   width: 427px;
 }
 footer ul li{
@@ -220,7 +221,6 @@ footer ul li{
 }
 footer ul li.first_item{
   margin-right: 24px;
-  /* margin-left:20px; */
 }
 footer ul li a{
   font-weight:bold;
@@ -235,11 +235,21 @@ footer ul li a.icon:before{
   position:relative;
   top: 0px;
 }
-
+/* Deep content indicator */
+#deep_page_indicator{
+	width: 25px;
+	height: 21px;
+	position:absolute;
+	left: 20px;
+	bottom: 68px;
+	background: url(../../images/isa_template/deep_page_indicators_2dots.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
 /*ICON BUTTONS */
 .icon:before{
-  width:28px;
-  height:28px;
+  width: 19px;
+  height: 19px;
   background-size: contain !important;
   display: inline-block;
 }
@@ -255,7 +265,7 @@ footer ul li a.icon:before{
   background-size: contain;
   position: absolute;
   top: 6px;
-  right: 5px;
+  right: 28px;
 }
 #isi_btn.icon.open{
   background:url(../../images/isa_template/icon_isi_collapse.svg) no-repeat;
@@ -288,30 +298,31 @@ footer ul li a.icon:before{
   background: url(../../images/isa_template/icon_opt_in.svg) no-repeat;
   text-indent:999px;
   overflow:hidden;
-  top: -0px;
+  top: 4px;
 }
 #references.icon:before{
   content:"/slug";
   background: url(../../images/isa_template/icon_references.svg) no-repeat;
   text-indent:999px;
   overflow:hidden;
-  width: 35px;
-  height: 35px;
+  width: 24px;
+  height: 24px;
   position: relative;
-  top: 2px;
+  top: 6px;
 }
 #medication_guide.icon:before{
   content:"/slug";
   background: url(../../images/isa_template/icon_medication_guide.svg) no-repeat;
   text-indent:999px;
   overflow:hidden;
+  top: 4px;
 }
 #prescription_info.icon:before{
   content:"/slug";
   background: url(../../images/isa_template/icon_prescribing_info.svg) no-repeat;
   text-indent:999px;
   overflow:hidden;
-  /* left: -81px; */
+  top: 4px;
 }
 /*MODALS */
 .modal_bg{
@@ -325,12 +336,12 @@ footer ul li a.icon:before{
   z-index:99999;
 }
 .modal_win{
-	width: 850px;
-	height: 500px;
+	width: 873px;
+	height: 570px;
 	background:white;
 	position:absolute;
 	left:50%;
-	top:50%;
+	top: 40%;
 	margin-top: -273px;
 	margin-left: -425px;
 }
@@ -368,26 +379,24 @@ footer ul li a.icon:before{
 }
 .modal_win .modal_content #controls{
 position:absolute;
-left: 777px;
-top: 427px;
-width: 141px;
+left: 808px;
+top: 505px;
+width: 38px;
 }
 .modal_win .modal_content #controls .prev_btn{
 width: 50px;
 height: 50px;
 background: url(../../images/isa_template/prev_btn.svg) no-repeat;
-/* float: left; */
 cursor:pointer;
 background-size: contain;
 margin-bottom: 15px;
 }
 .modal_win .modal_content #controls .next_btn{
-width: 50px;
-height: 50px;
+width: 35PX;
+height: 35PX;
 background: url(../../images/isa_template/next_btn.svg) no-repeat;
 cursor:pointer;
 float: left;
-/* margin-left: 10px; */
 background-size: contain;
 }
 .modal_win .modal_content ul li{
@@ -409,21 +418,6 @@ display:none;
 .start_anim{
 	margin-top:-695px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

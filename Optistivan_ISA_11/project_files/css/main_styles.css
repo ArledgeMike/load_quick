@@ -22,10 +22,8 @@
   top:200px;
   left: 95px;
   width:584px;
-  font-size: 18px;
-  line-height: 21px;}
+}
 #content .section .graph{
-  /* background: url(../images/11.0_graph.png) no-repeat; */
   width:550px;
   height:340px;
   background-size: contain;
@@ -138,9 +136,9 @@ z-index:999999999;
 #content p.graph_footer{
   position:absolute;
   left: 95px;
-  top: 618px;
+  top: 613px;
   width:700px;
-  font-size:13px;
+  font-size: 16px;
   z-index:9;
 }
 

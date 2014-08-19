@@ -18,7 +18,9 @@ p.footnote{
   line-height:15px;
   color:#4d4d4f;	
 }
-
+sup{
+	font-size:55%;
+}
 /* TEMPLATE GLOBAL ELEMENTS */
 *{
   padding:0px;
@@ -243,7 +245,6 @@ footer ul li a.icon:before{
 	background: url(../../images/isa_template/deep_page_indicators_2dots.svg);
 	background-repeat: no-repeat;
 	background-size: contain;
-	z-index:8;
 }
 /*ICON BUTTONS */
 .icon:before{

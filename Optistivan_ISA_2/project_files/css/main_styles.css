@@ -30,7 +30,7 @@ background-size: contain;
   opacity:0;
 }
 #container .sub_headline sup{
-	font-size: 55%;
+	/* font-size: 55%; */
 }
 #container #efficacy_one.section{
   opacity:1
@@ -51,7 +51,7 @@ background-size: contain;
   width:837px;
   position: relative;
   left: 200px;
-  top: 55px;
+  top: 70px;
 }
 
 
@@ -63,7 +63,6 @@ background-size: contain;
   background: url(../images/2.0_graph_body.svg) no-repeat;
   width: 550px;
   height: 380px;
-  top: 80px;
 }
 #container #efficacy_one .graph .opt_lines{
   width: 467px;
@@ -124,11 +123,12 @@ background-size: contain;
 }  
 #container #efficacy_one.section.table .graph .numbers{
   background: url(../images/2_0_graph_numbers.svg) no-repeat;
-  width: 465px;
-  height: 300px;
+  width: 223px;
+  height: 223px;
   position: absolute;
-  top: -46px;
-  left: 106px;
+  top: 3px;
+  left:155px;
+  z-index:9;
   opacity:0;
 }
 #container #efficacy_one.section.table.active .graph .numbers{
@@ -169,28 +169,28 @@ background-size: contain;
 #container #efficacy_two .graph{
   background: url(../images/2_1_graph_body.svg) no-repeat;
   width:504px;
-  height:326px;
-  top: 60px;
+  height:370px;
+  margin-bottom:5px;
 }
 #container #efficacy_two.section.table .graph .opt_bar{
   background: url(../images/2_1_graph_opti_bar.svg) no-repeat;
-  width:71px;
+  width:82px;
   position: absolute;
   left: 106px;
-  bottom: 42px;
-  background-size: 71px 234px;
+  bottom: 47px;
+  background-size: 82px 270px;
 }
 #container #efficacy_two.section.table.active .graph .opt_bar{
-  -webkit-animation: opt_grow 1s linear forwards;
+  -webkit-animation: opt_grow_first 1s linear forwards;
   -webkit-animation-delay: 1.75s;
 }
 #container #efficacy_two.section.table .graph .gen_bar{
   background: url(../images/2_1_graph_gen_bar.svg) no-repeat;
-  width:71px;
+  width:82px;
   position: absolute;
   left: 246px;
-  bottom: 42px;
-  background-size: 71px 153px;
+  bottom: 47px;
+  background-size: 82px 178px;
 }
 #container #efficacy_two.section.table.active .graph .gen_bar{
   -webkit-animation: gen_grow 1s linear forwards;
@@ -201,8 +201,8 @@ background-size: contain;
   width:74px;
   height:20px;
   position: absolute;
-  left: 110px;
-  top: 22px;
+  left: 113px;
+  top: 24px;
   opacity:0;
 }
 #container #efficacy_two.section.table.active .graph .opti_num{
@@ -215,8 +215,8 @@ background-size: contain;
   height:20px;
   opacity:0;
   position: absolute;
-  left: 245px;
-  top: 105px;
+  left: 250px;
+  top: 117px;
 }
 #container #efficacy_two.section.table.active .graph .gen_num{
   -webkit-animation: show_num .5s linear forwards;
@@ -225,18 +225,15 @@ background-size: contain;
 #container #efficacy_two.section.table .graph .numbers{
   background: url(../images/2_1_graph_numbers.svg) no-repeat;
   width:314px;
-  height:102px;
+  height:107px;
   position: absolute;
-  left: 183px;
-  top: -3px;
+  left: 195px;
+  top: -2px;
   opacity:0;
 }
  #container #efficacy_two.section.table.active .graph .numbers{
   -webkit-animation: show_data .5s linear forwards;
   -webkit-animation-delay: 2.9s;
-}
-#container #efficacy_two p.graph_footer{
-  top: 108px;
 }
 @-webkit-keyframes show_num {
    0%{
@@ -254,12 +251,12 @@ background-size: contain;
     opacity: 1;
   }
 }
-@-webkit-keyframes opt_grow {
+@-webkit-keyframes opt_grow_first {
    0%{
     height: 0px;
   }
   100% {
-   height: 234px;
+   height: 270px;
   }
 }
 @-webkit-keyframes gen_grow {
@@ -267,7 +264,7 @@ background-size: contain;
     height: 0px;
   }
   100% {
-   height: 153px;
+   height: 178px;
   }
 }
 
@@ -278,14 +275,9 @@ background-size: contain;
 
 #container #efficacy_three .graph{
   background: url(../images/2.2_graph.svg) no-repeat;
-  height:353px;
-  top: 30px;
+  height:380px;
   left: 150px;
 }
-#container #efficacy_three p.graph_footer{
-  top:93px;
-}
-
 
 /**********************************/
 /**********************************/
@@ -398,16 +390,17 @@ background-size: contain;
 }
 #container #efficacy_five .graph{
   background: url(../images/2_4_graph_body.svg)no-repeat;
-  height:326px;
+  height: 370px;
   width:504px;
+  margin-bottom: 18px;
 }
 #container #efficacy_five.section.table .graph .opt_bar{
   background: url(../images/2_4_graph_opti_bar.svg) no-repeat;
-  width:71px;
+  width: 82px;
   position: absolute;
   left: 106px;
-  bottom: 42px;
-  background-size: 71px 234px;
+  bottom: 47px;
+  background-size: 82px 275px;
 }
 #container #efficacy_five.section.table.active .graph .opt_bar{
   -webkit-animation: opt_grow 1s linear forwards;
@@ -415,12 +408,12 @@ background-size: contain;
 }
 #container #efficacy_five.section.table .graph .gen_bar{
   background: url(../images/2_4_graph_gen_bar.svg) no-repeat;
-  width:71px;
+  width: 82px;
   position: absolute;
   left: 246px;
-  bottom: 42px;
+  bottom: 47px;
   height:0px;
-  background-size: 71px 98px;
+  background-size: 82px 114px;
 }
 #container #efficacy_five.section.table.active .graph .gen_bar{
   -webkit-animation: second_gen_grow 1s linear forwards;
@@ -431,8 +424,8 @@ background-size: contain;
   width:74px;
   height:20px;
   position: absolute;
-  left: 115px;
-  top: 22px;
+  left: 122px;
+  top: 19px;
   opacity:0;
 }
 #container #efficacy_five.section.table.active .graph .opti_num{
@@ -445,8 +438,8 @@ background-size: contain;
   height:20px;
   opacity:0;
   position: absolute;
-  left: 255px;
-  top: 160px;
+  left: 258px;
+  top: 180px;
 }#container #efficacy_five.section.table.active .graph .gen_num{
   -webkit-animation: show_num .5s linear forwards;
   -webkit-animation-delay: 2.6s; /* Chrome, Safari, Opera */
@@ -465,11 +458,11 @@ background-size: contain;
 
 #container #efficacy_five.section.table .graph .numbers{
   background: url(../images/2_4_graph_numbers.svg) no-repeat;
-  width:314px;
-  height:186px;
+  width: 323px;
+  height: 191px;
   position: absolute;
-  left: 200px;
-  top: -4px;
+  left: 208px;
+  top: -6px;
   opacity:0;
 }
 #container #efficacy_five.section.table.active .graph .numbers{
@@ -477,7 +470,7 @@ background-size: contain;
   -webkit-animation-delay: 3s; /* Chrome, Safari, Opera */
 }
 #container #efficacy_five p.graph_footer{
-  top: 108px;
+  /* top: 108px; */
 }
 @-webkit-keyframes show_data {
    0%{
@@ -492,7 +485,7 @@ background-size: contain;
     height: 0px;
   }
   100% {
-   height: 234px;
+   height: 275px;
   }
 }
 @-webkit-keyframes second_gen_grow {
@@ -500,7 +493,7 @@ background-size: contain;
     height: 0px;
   }
   100% {
-   height: 98px;
+   height: 114px;
   }
 }
 
@@ -512,7 +505,7 @@ background-size: contain;
 #container #efficacy_six .graph{
   background: url(../images/2.5_graph.svg)no-repeat;
   height:370px;
-  top: 30px;
+  /* top: 30px; */
   left: 150px;
 }
 #container #efficacy_three p.body{
