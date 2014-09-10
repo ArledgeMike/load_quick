@@ -2,7 +2,7 @@ var isa = {
   acc_open: false,
   
   init: function(){
-
+ 
   },
   
   configure_click: function(event){
@@ -67,14 +67,14 @@ var isa = {
 		  console.log("open that drawer");
     open.animate({
       height:150,
-      backgroundPositionY: 0
+      backgroundPositionY: -50
     },300,function(){
       $(this).addClass('open');
     });
     open.find('span svg g path').css('fill', 'white');
  
 
-    chil = open.find('.acc_content').children();
+    chil = open.find('.acc_content a').children();
     for(var i=0; i< chil.length; i++){
       $(chil[i]).delay(500).animate({
         opacity:1
@@ -86,7 +86,7 @@ var isa = {
   
   accordian_close: function(){
     $('.acc_btn.open span svg g path').css('fill', '#6c6d6f'); 	  
-    open_chil = $('.acc_btn.open').find('.acc_content').children();
+    open_chil = $('.acc_btn.open').find('.acc_content a').children();
     for(var i=0; i< open_chil.length; i++){
       $(open_chil[i]).animate({
         opacity:0
@@ -94,10 +94,9 @@ var isa = {
     }
     $('.acc_btn.open').animate({
       height:50,
-      backgroundPositionY:-50
+      backgroundPositionY: 0
     }, 300);
     $('.acc_btn.open').removeClass('open'); 
   }
 
 }
-

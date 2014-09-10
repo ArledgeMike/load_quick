@@ -44,14 +44,14 @@ background-size: contain;
 #container p.graph_footer{
   position: relative;
   left: 94px;
-  top: 81px;
+  top: 60px;
   width: 758px;
 }
 #container .section .graph{
   width:837px;
   position: relative;
   left: 200px;
-  top: 70px;
+  top: 40px;
 }
 
 
@@ -514,7 +514,9 @@ background-size: contain;
   width:75%;
 }
 #container #efficacy_six p.graph_footer{
-  top: 87px;
+  /* top: 87px; */
 }
+
+
 
 

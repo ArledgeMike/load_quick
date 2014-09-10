@@ -11,6 +11,7 @@ $(document).ready(function(){
       });
     });
   }
+  
 
   function next_slide(){
     active = $('.modal_content ul li.active'); 
@@ -87,6 +88,6 @@ $(document).ready(function(){
  
 
   load_globals();
-
+   
  
 });

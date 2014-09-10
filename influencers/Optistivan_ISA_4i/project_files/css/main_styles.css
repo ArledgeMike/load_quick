@@ -2,23 +2,19 @@
   width:100%;
   height:100%;
   display:block;
-  //background:url(../images/4.0_background.jpg) no-repeat;
   width: 100%;
   background-size: contain;
   height: 100% !important;
 }
-sup{
-font-size:55%;
-}
 #deep_page_indicator {
-width: 25px;
-height: 21px;
-position: absolute;
-left: 20px;
-bottom: 68px;
-background: url(../images/isa_template/deep_page_indicators_2dots.svg);
-background-repeat: no-repeat;
-background-size: contain;
+  width: 25px;
+  height: 21px;
+  position: absolute;
+  left: 20px;
+  bottom: 68px;
+  background: url(../images/isa_template/deep_page_indicators_2dots.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 #content .headline{
   background: url(../images/4.0_headline.svg) no-repeat;	
@@ -33,7 +29,6 @@ background-size: contain;
   top: 195px;
   left:94px;
   width:584px;
-  line-height: 18px;
 }
 #container .section .graph{
   width: 820px;
@@ -44,98 +39,112 @@ background-size: contain;
   overflow:hidden;
 }
 #container .section .graph .header{
-width:764px;
-height:34px;
-background: url(../images/4.0_graph_header.svg) no-repeat;
-float:right;
-z-index: 99;
-background-color:white;
-position:relative;
+  width: 765px;
+  background: url(../images/4.0_graph_header.svg) no-repeat;
+  float:right;
+  z-index: 99;
+  background-color:white;
+  position:relative;
+  height: 36px;
+  background-size: 765px 36px;
+}
+#container .section#nsclc_safety .graph{
+  height: 357px;
+  width: 960px;
 }
 #container .section#nsclc_safety_two .graph .header{
-background: url(../images/4.3_graph_header.svg) no-repeat;
-background-color:white;
-
+  background: url(../images/4.3_graph_header.svg) no-repeat;
+  background-color:white;
+  background-size: 698px 36px;
+  width: 698px;
+  height: 35px;
+  right: 66px;
 }
 #container #nsclc_safety.section .graph .header{
 background: url(../images/4.2_graph_header.svg) no-repeat;
 background-color:white;
-
+background-size: 815px 36px;
+width: 815px;
+height: 36px;
+right: 92px;
 }
-
-
 #container .section .graph .body{
-width:764px;
-height: 561px;
-position:relative;
-background: url(../images/4.0_graph.svg)no-repeat 0 0;
-overflow:hidden;
-//background-position-y: 0px;
-float:right;
-top:0px
+  width: 766px;
+  height: 564px;
+  position:relative;
+  background: url(../images/4.0_graph.svg)no-repeat 0 0;
+  overflow:hidden;
+  float:right;
+  top:0px
+;
+  background-size: 766px 564px;
 }
 #container #safety.section .graph{
-  background:url(../images/4.1_graph.svg)  55px 0px no-repeat;
-  height: 360px;
+  background: url(../images/4.1_graph.svg)  0px 0px no-repeat;
+  height: 353px;
+  width: 760px;
+  background-size: 760px 353px;
+  left: 176px;
 }
-#container .section#nsclc_safety_two .graph{
-  /* height: 315px; */
-}
-
 #container .section#nsclc_safety_two .graph .body{
-background: url(../images/4.3_graph.svg) no-repeat 0 0;
-height: 485px;}
-
-
+  background: url(../images/4.3_graph.svg) no-repeat 0 0;
+  height: 485px;
+  width: 698px;
+  right: 66px;
+}
 #container #nsclc_safety.section .graph .body{
-background: url(../images/4.2_graph.svg) no-repeat 0 0;
-height:525px;
+  background: url(../images/4.2_graph.svg) no-repeat 0 0;
+  height: 564px;
+  width: 816px;
+  background-size: 816px 557px;
+  right: 92px;
 }
-
 #container .section .graph .controls{
-position:absolute;
-left: 0px;
-top: 250px;
+  position:absolute;
+  left: 0px;
+  top: 250px;
 }
-
 #container .section .graph .controls .up{
-width:35px;
-height:35px;
-cursor:pointer;
-background: url(../images/up_btn.svg) no-repeat;
-background-size: contain;
+  width:35px;
+  height:35px;
+  cursor:pointer;
+  background: url(../images/up_btn.svg) no-repeat;
+  background-size: contain;
 }
 #container .section .graph .controls .down{
-width:35px;
-cursor:pointer;
-height:35px;
-background: url(../images/down_btn.svg) no-repeat;
-background-size: contain;
-margin-top: 25px;
+  width:35px;
+  cursor:pointer;
+  height:35px;
+  background: url(../images/down_btn.svg) no-repeat;
+  background-size: contain;
+  margin-top: 25px;
 }
 #container .section .graph .controls .inactive{
   opacity:.5;
   cursor:none;
 }
-
-
 #container p.graph_footer{
   position:absolute;
   left: 94px;
   top: 642px;
   width: 700px;
 }
+#container .section#nsclc_safety p.graph_footer{
+  left:173px;
+}
 #container #safety.section p.graph_footer{
-    top: 625px;
-
+  top: 625px;
+}
+#container #nsclc_safety_two.section p.graph_footer{
+top:623px;
 }
 #container #nsclc_safety.section p.graph_caption{
-font-size:12px;
-line-height:15px;
-color: #4d4d4f;
-position:absolute;
-top: 630px;
-left: 150px;
+  font-size:12px;
+  line-height:15px;
+  color: #4d4d4f;
+  position:absolute;
+  top: 630px;
+  left: 150px;
 }
 
 

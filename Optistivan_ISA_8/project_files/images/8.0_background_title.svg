@@ -5,6 +5,6 @@
 	 width="520px" height="100px" viewBox="0 0 520 100" enable-background="new 0 0 520 100" xml:space="preserve">
 <g id="Layer_2">
 </g>
-<rect y="50" opacity="0.7" fill="#FFFFFF" enable-background="new    " width="520" height="50"/>
-<rect opacity="0.7" fill="#60A296" enable-background="new    " width="520" height="50"/>
+<rect y="50" opacity="0.7" fill="#60A296" enable-background="new" width="520" height="50"/>
+<rect opacity="0.7" fill="#FFFFFF" enable-background="new" width="520" height="50"/>
 </svg>

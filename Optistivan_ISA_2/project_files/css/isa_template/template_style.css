@@ -374,8 +374,8 @@ footer ul li a.icon:before{
   float:left;
 }
 .modal_win .modal_content li img{
-	width:100%;
-	height:100%;
+	width: 100%;
+	height: auto;
 }
 .modal_win .modal_content #controls{
 position:absolute;
@@ -405,8 +405,43 @@ display:none;
 .modal_win .modal_content ul li.active{
 	display:block;
 }
+.modal_win .modal_content #pi_modal{
+    width: 99%;
 
+    height: 97%;
+    overflow-y: scroll;
+    margin: auto;
+    margin-top: 10px;
+}
+.modal_win .modal_content #pi_modal img{
+    width: 100%;
 
+    height: auto;
+}
+.modal_win .modal_content form{
+    position: absolute;
+    width: 525px;
+    height: 40px;
+    top: 350px;
+    left: 27px;
+}
+
+.modal_win .modal_content input#email{
+border: thin gray solid;
+width: 348px;
+height: 39px;
+position:absolute;
+}
+.modal_win .modal_content a.submit_btn{
+background: url(../../images/isa_template/submit_btn.jpg) no-repeat;
+width: 162px;
+height: 40px;
+position:absolute;
+right: 0px;
+background-size: contain;
+cursor:pointer;
+display:inline-block;
+}
 /*Animations*/
 .start_isi{
   margin-top:-92px;
@@ -418,6 +453,15 @@ display:none;
 .start_anim{
 	margin-top:-695px;
 }
+
+///////////////////////////////////////////////////////
+//////*** DOT NAVIGATION STYLES FOR DEEP PAGES  ***///
+
+#fullPage-nav.left{
+	top:200px !important;
+}
+
+
 
 
 

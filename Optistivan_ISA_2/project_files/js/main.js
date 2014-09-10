@@ -18,6 +18,8 @@ var isa = {
   unlock_scroll: function(){ 
     $('#container').fullpage({
       scrollingSpeed:1000,
+      navigation: true,
+      navigationPosition: "left",
       onLeave: function(index, nextIndex, direction){
 	    isa.fpage_index = nextIndex;
         if( (index >= 3) && (direction == "down") ){
@@ -38,7 +40,8 @@ var isa = {
 	$('#link_controls ul li a#mcrpc.icon').on("click", isa.go_to );
     $('#link_controls ul li a#nsclc.icon').on("click", isa.go_to ); 
     
-	if(location.hash == "#nsclc"){
+	if(document.location.hash == "#nsclc"){
+		alert("there is a hash");
       $.fn.fullpage.moveTo(4, 0);
       $('#link_controls li a#mcrpc').removeClass('active');
       $('#link_controls li a#nsclc').addClass('active');

@@ -39,45 +39,65 @@
   overflow:hidden;
 }
 #container .section .graph .header{
-  width:764px;
-  height:34px;
+  width: 765px;
   background: url(../images/4.0_graph_header.svg) no-repeat;
   float:right;
   z-index: 99;
   background-color:white;
   position:relative;
+  height: 36px;
+  background-size: 765px 36px;
 }
 #container .section#nsclc_safety .graph{
-  height:370px;
+  height: 357px;
+  width: 960px;
 }
 #container .section#nsclc_safety_two .graph .header{
   background: url(../images/4.3_graph_header.svg) no-repeat;
   background-color:white;
+  background-size: 698px 36px;
+  width: 698px;
+  height: 35px;
+  right: 66px;
 }
 #container #nsclc_safety.section .graph .header{
 background: url(../images/4.2_graph_header.svg) no-repeat;
 background-color:white;
+background-size: 815px 36px;
+width: 815px;
+height: 36px;
+right: 92px;
 }
 #container .section .graph .body{
-  width:764px;
-  height: 561px;
+  width: 766px;
+  height: 564px;
   position:relative;
   background: url(../images/4.0_graph.svg)no-repeat 0 0;
   overflow:hidden;
   float:right;
   top:0px
+;
+  background-size: 766px 564px;
 }
 #container #safety.section .graph{
-  background:url(../images/4.1_graph.svg)  55px 0px no-repeat;
-  height: 360px;
+  background: url(../images/4.1_graph.svg)  0px 0px no-repeat;
+  height: 353px;
+  width: 760px;
+  background-size: 760px 353px;
+  left: 176px;
 }
 #container .section#nsclc_safety_two .graph .body{
   background: url(../images/4.3_graph.svg) no-repeat 0 0;
   height: 485px;
+  width: 698px;
+  right: 66px;
 }
 #container #nsclc_safety.section .graph .body{
   background: url(../images/4.2_graph.svg) no-repeat 0 0;
-  height:525px;
+  height: 564px;
+  width: 816px;
+  background-size: 816px 557px;
+  right: 92px;
 }
 #container .section .graph .controls{
   position:absolute;
@@ -115,6 +135,9 @@ background-color:white;
 #container #safety.section p.graph_footer{
   top: 625px;
 }
+#container #nsclc_safety_two.section p.graph_footer{
+top:623px;
+}
 #container #nsclc_safety.section p.graph_caption{
   font-size:12px;
   line-height:15px;
@@ -123,3 +146,6 @@ background-color:white;
   top: 630px;
   left: 150px;
 }
+
+
+

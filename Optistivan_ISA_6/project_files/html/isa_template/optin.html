@@ -1,6 +1,19 @@
 <ul>
   <li class="first active"><img src="project_files/images/isa_template/OPT_Opt-in_Modal_00a.jpg" /></li>
 </ul>
+<form>
+	<input type="text" id="email"><a class="submit_btn" ></a>
+</form>
 <div id="controls">
-<div class="next_btn" onclick="void(0)" rel="next"></div>
 </div>
+<script>
+ $('form .submit_btn').on('click', function(event){
+    console.log("submit button");
+	  $(this).parent().slideUp(function(){
+		  $(this).html('<h1>E-mail confirmed</h1>').slideDown();
+    });
+ 	  event.preventDefault();
+ 
+  });
+
+</script>

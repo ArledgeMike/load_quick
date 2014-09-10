@@ -1,0 +1,239 @@
+#content{
+  width:100%;
+  height:100%;
+ }
+nav{
+z-index:99999;
+}
+#content .section{
+	width:100%;
+	height:100%;
+	z-index: 99;
+	max-width: 1024px;
+	max-height: 768px;
+}
+#content .section .headline{
+  background: url(../images/11.0_headline.svg) no-repeat;	
+  width:763px;
+  height:105px;
+  position:absolute;
+  left:94px;
+  top:90px;
+}
+#content .section .sub_headline{
+  position:absolute;
+  top:200px;
+  left: 95px;
+  width:584px;
+  font-size: 18px;
+  line-height: 21px;}
+#content .section .graph{
+  /* background: url(../images/11.0_graph.png) no-repeat; */
+  width:550px;
+  height:340px;
+  background-size: contain;
+  position:absolute;
+  left: 95px;
+  top: 263px;
+}
+#content .section .graph ul{
+  list-style-type:none;
+  width: 100%;
+  margin-left: 0px;
+  padding-left: 0px;
+  width: 525px;
+  margin-bottom: 29px;
+}
+#content .section .graph ul li{
+    width: 100%;
+    margin-bottom: 12px;
+    margin-left: 0px;
+    padding-left: 0px;
+    font-size: 16px;
+    /* font-weight: bold; */
+}
+#content .section .graph ul li.title{
+    height: 28px;
+    border-bottom: 2px solid #d9d5c5;
+    width: 450px;
+}
+#content .section .graph ul li.btn{
+    height: 38px;
+
+    background-position: 55px 11px !important;
+    margin-bottom: 21px;
+    cursor: pointer;
+    display: block;
+}
+#content .section .graph ul li.btn:before{
+content: "/slug";
+width: 48px;
+height: 47px;
+overflow:hidden;
+text-indent:9999px;
+position:absolute;
+display:block;
+
+}
+
+#content .section .graph ul li#tcell.btn{
+background: url(../images/11.0_tcell_title.svg) no-repeat;
+}
+#content .section .graph ul li#tcell.btn:before{
+background: url(../images/tcell_button.png) no-repeat;
+}
+
+#content .section .graph ul li#defense.btn{
+background: url(../images/11.0_defense_title.svg) no-repeat;
+}
+#content .section .graph ul li#defense.btn:before{
+background: url(../images/defense_button.png) no-repeat;
+}
+
+#content .section .graph ul li#targets.btn{
+background: url(../images/11.0_targets_title.svg) no-repeat;
+}
+#content .section .graph ul li#targets.btn:before{
+background: url(../images/targets_button.png) no-repeat;
+}
+
+
+
+#content .section .graph ul li#helps.btn{
+background: url(../images/11.0_helps_title.svg) no-repeat;
+}
+#content .section .graph ul li#helps.btn:before{
+background: url(../images/helps_button.png) no-repeat;
+}
+#content .section .graph ul li.btn.play:before{
+background: url(../images/play_button.png) no-repeat !important;
+}
+
+#content #vid_container{
+width:100%;
+height:100%;
+position:fixed;
+top:0px;
+left:0px;
+display:none;
+cursor:pointer;
+z-index:999999;
+
+}
+#content #vid_container .exit_btn{
+background: url(../images/close_icon_white.png) no-repeat 5px 26px;	
+position:fixed;
+background:
+top:0px;
+right:0px;
+width:50px;
+height:50px;
+cursor:pointer;
+z-index:999999999;
+}
+
+#content p.fair_use{
+    position: absolute;
+    top: 646px;
+    left: 94px;
+    width: 680px;
+}
+#content p.graph_footer{
+  position:absolute;
+  left: 95px;
+  top: 618px;
+  width:700px;
+  font-size:13px;
+  z-index:9;
+}
+
+.cell{
+width: 230px;
+height:212px;
+background: url(../images/Optistavin_scene1_GIF.gif) no-repeat;
+position:absolute;
+left: 720px;
+height:350px;
+top: 180px;
+}
+#seq2.cell{
+width:280px;
+height:570px;
+left:744px;
+top:62px;
+}
+#seq3.cell{
+width:460px;
+height:560px;
+left:564px;
+top:20px;
+
+}
+#seq4.cell{
+width:430px;
+height:600px;
+top:20px;
+left: 598px;
+}
+
+#background{
+width:100%;
+height:100%;
+ display:block;
+	background-image:url(../images/11.0_background.jpg);
+       background-repeat:no-repeat;
+position: absolute;
+top:0px;
+left:0px;
+background-size: contain;
+}
+
+
+#vid_container #video_controls{
+    position: fixed;
+
+    bottom: 9px;
+    left: 50%;
+    height: 50px;
+    width: 200px;
+    background: rgba(224,224,224,.9);
+    margin-left: -100px;
+    border-radius: 11px;
+    z-index: 99999;
+}
+#vid_container #video_controls .btn{
+	width:35px;
+	height:35px;
+	background: url(../images/video_btn.svg);
+	position:relative;
+        	float:left;
+       background-repeat: none;
+	margin-top: 7px;
+	background-position: 0px 5px;
+	margin-left: 12px;
+	background-size: 135px 135px;
+}
+#vid_container #video_controls #rw.btn{
+	background-position: 0px 87px;
+
+}
+
+#vid_container #video_controls #pause.btn{
+	
+	background-position: -66px 87px;
+
+}
+#vid_container #video_controls #play.btn{
+		background-position: -35px 87px;
+	
+
+}
+#vid_container #video_controls #ff.btn{
+	background-position: -99px 87px;
+
+}
+
+
+
+
+

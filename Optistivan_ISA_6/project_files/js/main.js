@@ -1,18 +1,16 @@
 var isa = {
-	modal: false,
-  
+	opt_start : 1,
+	gen_start : 1,
+        gen_timer: "#gen.bag p",
+	opt_timer: "#opt.bag p",
+	gen_liquid: ".graph #gen.liquid",
+	opt_liquid: ".graph #opt.liquid",
   init: function(){
-  
-    console.log("isa called");
-    isa.start_animation();
-  },
-  start_animation: function(){
-  
- //isa.animate_gen($('.graph #gen.liquid'), 6000) 
-//isa.animate_opt(3200);
-  },
-  configure_click: function(event){
-  
+    isa.start_timer(isa.gen_start, isa.gen_timer);
+    isa.start_timer(isa.opt_start, isa.opt_timer);
+    isa.animate_liq(isa.opt_liquid, 10000);
+   isa.animate_liq(isa.gen_liquid, 18400);
+ 
   },
   show_controls_efficacy: function(show){
     if(show){
@@ -21,20 +19,16 @@ var isa = {
   },
   lock_scroll: function(){
     $('#content').on('touchmove', false);
-	  //$(document).on('touchmove', false);
   },
-
   unlock_scroll: function(){
     $('#container').fullpage({
       scrollingSpeed:1000,
       onLeave: function(index, nextIndex, direction){
-	isa.animate_test_out(index, nextIndex, direction);
-
+      	isa.animate_test_out(index, nextIndex, direction);
       },
       afterLoad: function(anchorLink, index){
 	isa.animate_test_in(anchorLink, index);
       }
-      
     });
   },
   animate_test_in: function(anchorLink, index){
@@ -44,86 +38,36 @@ var isa = {
 
   },
   animate_test_out: function(index, nextIndex, direction){
-      $('.section ').eq(index -1).animate({
-	opacity:0      
-      },1000);
+    $('.section ').eq(index -1).animate({
+      opacity:0      
+    },1000);
+  },
+  start_timer: function(start_val, timer){
+    console.log("start timer called");
+  var  w = window.setInterval(function(){
+    $(timer).text(start_val);  
+      console.log("in the loop");
+      start_val++;
+       	if (timer == isa.gen_timer && start_val == 61){
+        this.clearInterval(w);
+   }
+ 	if (timer == isa.opt_timer && start_val == 31){
+        this.clearInterval(w);
+   }
+
+    },250);
+      
     },
-  open_modal: function(){
   
-        isa.modal = true;  	  
-    $('.modal_bg').fadeIn();
-    
-    
   
-  },
-  close_modal: function(event){
-    
-	  if(isa.modal){
-      
-        $('.modal_bg').fadeOut();
-        isa.modal = false;
-      
-      event.stopPropagation();
-    }
-
-  
-  },
-
-	animate_opt: function(dur){
-		
-//		console.log("animate liquid");
-//	 $this = el;
-	 var w;
-    var i=0;
-  
-
-  $('.graph #opt.liquid').delay(2000).animate({
-  height:10
-  },{
-  easing: "easeOutCubic",
-    duration:dur,
-    start: function(){
-      w =  window.setInterval(function(){
-     $('#opt.bag p').text(i);
-     i++
-   },100);
-
- //     console.log("step");
-  },
-    complete: function(){
-window.clearInterval(w);
-      
-    }
-});  
+  run_timer:function(){},
+  animate_liq: function(target, dur){
+   $(target).animate({
+     height:0
+   },dur);	
 	
-	
-	
-	}
-,	
-	animate_gen: function(el, dur){
-		console.log("animate liquid");
-	 $this = el;
-  var i=0;
- var w; 
-
-  $this.delay(2000).animate({
-  height:10
-  },{
-  easing: "easeOutCubic",
-    duration:dur,
-    start: function(){
-       w =  window.setInterval(function(){
-     $('#gen.bag p').text(i);
-     i++
-   },100);
- 
-      console.log("step");
   },
-    complete: function(){
-window.clearInterval(w);
-      
-    }
-});  
+  animate_gen: function(el, dur){
 	
 	
 	
