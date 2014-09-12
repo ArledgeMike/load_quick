@@ -1,35 +1,66 @@
 isa = {
   fpage_index : 1,
   current_pos: 0, 
+  graph_pos: 344,
   init: function(){
-    $('.controls .up').on('click', function(){
+    $('.section .up').on('click', function(){
 	  isa.scroll_down(event);
     });
 
-   $('.controls .down').on('click', function(){
+   $('.section .down').on('click', function(){
      isa.scroll_up(event);
    });
   },
   
   scroll_down: function(event){
     t = event.target;
-	$(t).addClass('inactive');
-	$(t).parent().find('.down').removeClass('inactive');
-	graph = $(t).parent().parent().find('.body');
-    $(graph).stop().animate({
-      top: 0 	   
-	});
+	graph = $(t).parent().find('.body');
+	
+	increment = 85;
+	inc = parseInt( $(graph).css("top") );
+	dist = (inc + increment) ;
+	
+	if(dist > 0){
+		$(t).addClass('inactive');
+	    
+		$(graph).stop().animate({
+	      top: 0  
+		});
+	}else{
+		$(t).parent().find('.down').removeClass('inactive');
+	    $(graph).stop().animate({
+	      top: dist   
+		});
+	}
+   
   },
   
   scroll_up: function(event){
+	console.log("scroll up");
     t = event.target;
-	$(t).addClass('inactive');
-	$(t).parent().find('.up').removeClass('inactive');
-	graph = $(t).parent().parent().find('.body');
-	g_height = graph.height();
-    $(graph).stop().animate({
-      top: (g_height * .5) * -1 
-	});
+	graph = $(t).parent().find('.body');
+	//offset = $(graph).offset().top;
+	//console.log("this is the body offset "  + offset );
+	//mes = offset * 0.25	
+	increment = 100;
+	inc = parseInt( $(graph).css("top") ) * -1;
+	dist = (inc + increment) * -1;
+	limit = (graph.height()* -1) + 200; 
+
+		//console.log(inc + mes);
+	//$(t).addClass('inactive');
+	//$(t).parent().find('.up').removeClass('inactive');
+	if(dist > limit){
+	  $(t).parent().find('.up').removeClass('inactive');
+      $(graph).stop().animate({
+        top: dist
+	  });
+	}else{
+      $(t).addClass('inactive');
+      $(graph).stop().animate({
+        top: limit
+	  });
+	}
   },
   
   show_controls_efficacy: function(show){
@@ -52,7 +83,7 @@ isa = {
       onLeave: function(index, nextIndex, direction){
 	    console.log("ON LEAVE" + index + nextIndex + direction);
 		isa.fpage_index = nextIndex;
-        
+        $('.graph .body').animate({top: 0});
 		if( (index >= 2) && (direction == "down") ){
           $('#link_controls li a#mcrpc').removeClass('active');
           $('#link_controls li a#nsclc').addClass('active');

@@ -93,8 +93,8 @@ text-decoration:none;
 color:#6d6e70;
 }
 #content #acc.graph #survival.acc_btn .acc_content{
-background: url(../images/1_8_0-summary-specialists.png) no-repeat rgba(243,241,233,.5)43px 7px;
-background-size: 191px 86px;
+background: url(../images/1_8_0-summary-specialists.png) no-repeat rgba(243,241,233,.5);
+background-size: 520px 100px;
 
 }
 #content #acc.graph #survival.acc_btn .acc_content .img h4.sub_headline{
@@ -103,12 +103,12 @@ top: 31px;
 }
 #content #acc.graph #moa.acc_btn .acc_content {
 background: url(../images/2_8_0-summary-specialists.png) no-repeat rgba(243,241,233,.5) top right;
-background-size:contain;
+background-size: 520px 100px;
 
 }
 #content #acc.graph #safety.acc_btn .acc_content {
 background: url(../images/3_8_0-summary-specialists.png) no-repeat rgba(243,241,233,.5) top center;
-background-size:contain;
+background-size: 520px 100px;
 }
 #content #acc.graph #safety.acc_btn .acc_content h4#left{
     position: relative;
@@ -125,9 +125,14 @@ background-size:contain;
     opacity: 1;
     z-index: 9;
 }
+#content #acc.graph #support.acc_btn .acc_content h4.sub_headline{
+	/* float:right; */
+	left: 235px;
+	top: 15px;
+}
 #content #acc.graph #patient.acc_btn .acc_content{
-background: url(../images/4_8_0-summary-specialists.png) no-repeat rgba(243,241,233,.5) 90px 0px;
-background-size:contain;
+background: url(../images/4_8_0-summary-specialists.png) no-repeat rgba(243,241,233,.5) 0px 0px;
+background-size: 520px 100px;
 }
 #content #acc.graph #patient.acc_btn .acc_content .img h4#right{
 left: 379px;
@@ -136,13 +141,13 @@ left: 379px;
 left: 53px;
 }
 #content #acc.graph #dosing.acc_btn .acc_content {
-background: url(../images/5_8_0-summary-specialists.png) no-repeat rgba(243,241,233,.5) 223px 0px;
-background-size:contain;
+background: url(../images/5_8_0-summary-specialists.png) no-repeat rgba(243,241,233,.5) 0px 0px;
+background-size: 520px 100px;
 
 }
 #content #acc.graph #support.acc_btn .acc_content {
-background: url(../images/6_8_0-summary-specialists.png) no-repeat rgba(243,241,233,.5) 20px 0px;
-background-size:contain;
+background: url(../images/6_8_0-summary-specialists.png) no-repeat rgba(243,241,233,.5) 0px 0px;
+background-size: 520px 100px;
 
 }
 #content p.fair_use{
@@ -158,16 +163,3 @@ background-size:contain;
   width:700px;
   font-size:13px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

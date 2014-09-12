@@ -46,7 +46,7 @@ body,html{
   margin-bottom: 15px;
   height: 50px;
   background: rgba(255,255,255,.7);
-  width: 415px;
+  width: 380px;
   position: relative;
 }
 #content nav ul li:after{
@@ -55,9 +55,9 @@ body,html{
   height:30px;
   background: url(../images/landing_page_arrow.svg) no-repeat;
   position: absolute;
-  right: 0px;
+  right: 15px;
   top: 11px;
-  right: 38px;
+  /* right: 6px; */
   background-size: contain;
   overflow: hidden;
   text-indent: 99px;
