@@ -176,7 +176,6 @@ nav{
   bottom: 9px;
   left: 50%;
   height: 50px;
-  /* width: 200px; */
   margin-left: -71px;
   border-radius: 11px;
   z-index: 99999;
@@ -192,6 +191,10 @@ nav{
 }
 #vid_container #video_controls #rw.btn{
   background: url(../images/rewind_icon_white.png) no-repeat 8px 8px;
+}
+#vid_container #video_controls #replay.btn{
+  background: url(../images/replay_icon_white.png) no-repeat 5px 2px;
+  display:none;
 }
 #vid_container #video_controls #pause.btn{	
   background: url(../images/pause_icon_white.png) no-repeat 8px 8px;
